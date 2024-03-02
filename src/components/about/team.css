@@ -1,0 +1,40 @@
+
+
+.containerA {
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 20;
+  }
+  
+  .items {
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    z-index: 20;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .odd {
+    flex-direction: row-reverse;
+    /* Content on the right, image on the left */
+  }
+  
+  .even {
+    flex-direction: row;
+    /* Content on the left, image on the right */
+  }
+  
+  .content {
+    flex:3;
+    /* Adjust content styling as needed */
+  }
+  
+  .image {
+    flex: .75;
+    border: 2px solid black;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Adjust image styling as needed */
+  }
+  

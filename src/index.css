@@ -1,0 +1,436 @@
+@font-face {
+  font-family: "font_fs-me_bold_italic";
+  font-weight: bold;
+  src: local("FS_Me"), 
+  url("fonts\FS_Me\FS Me-Bold Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "font_fs-me_bold";
+  font-weight: bold;
+  src: local("FS_Me"), 
+  url("fonts\FS_Me\FS Me-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "font_fs-me_heavy_italic";
+  src: local("FS_Me"), 
+  url("fonts\FS_Me\FS Me-Heavy Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "font_fs-me_heavy";
+  src: local("FS_Me"), 
+  url("fonts\FS_Me\FS Me-Heavy.otf") format("opentype");
+}
+@font-face {
+  font-family: "font_fs-me_Light_italic";
+  src: local("FS_Me"), 
+  url("fonts\FS_Me\FS Me-Light Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "font_fs-me_Italic";
+  src: local("FS_Me"), 
+  url("fonts\FS_Me\FS Me-Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "font_fs-me_Light";
+  src: local("FS_Me"), 
+  url("fonts\FS_Me\FS Me-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "font_fs-me_Regular";
+  src: local("FS_Me"), 
+  url("fonts\FS_Me\FS Me-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Livemono-Bold";
+  font-weight: bold;
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Livemono-Light";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Livemono-Medium";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Livemono-Regular";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Livemono-SemiBold";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Livemono-Thin";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Livemono-Bold";
+  font-weight: bold;
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Livemono-Light";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Livemono-Medium";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Livemono-Regular";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Livemono-SemiBold";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Livemono-Thin";
+  src: local("FS_Me"), 
+  url("fonts\Livemono_font\Livemono-Thin.ttf") format("truetype");
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap')
+;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* .separator{
+  width: 0;
+  height: 0;
+  border-left: 97.65vw solid transparent;
+  border-top: 8vh solid rgb(202, 195, 195);
+  margin-bottom:-13.3vw;
+  margin-top: 4vh;
+  z-index: 1;
+  border-top-right-radius: 10px;
+}
+.separator1{
+  width: 0;
+  height: 0;
+  border-right: 94.46vw solid transparent;
+  border-bottom: 8vh solid rgb(202, 195, 195);
+  margin-top: -9vw;
+  z-index: 1;
+  border-bottom-left-radius: 10px;
+}
+
+.separator2{
+  width: 0;
+  height: 0;
+  align-self: flex-end;
+  border-left: 94.45vw solid transparent;
+  border-bottom: 8vh solid rgb(202, 195, 195);
+  margin-top: -7vh;
+  border-bottom-right-radius: 10px;
+}
+.sep1{
+  width: 0;
+  height: 0;
+  border-left: 97.65vw solid transparent;
+  border-top: 8vh solid rgb(202, 195, 195);
+  margin-bottom:-15.9vh;
+  margin-top: 8vh;
+  border-top-right-radius: 10px;
+}
+.sep2{
+  width: 0;
+  height: 0;
+  border-right: 94.45vw solid transparent;
+  border-top: 8vh solid rgb(202, 195, 195);
+  margin-bottom:-15.5vh;
+  margin-top: 5vh;
+  border-top-left-radius: 10px;
+}
+.sep3{
+  width: 0;
+  height: 0;
+  border-right: 94.46vw solid transparent;
+  border-bottom: 8vh solid rgb(202, 195, 195);
+  margin-top: -7vh;
+  border-bottom-left-radius: 10px;
+} */
+
+/*Our Services*/
+
+.custom-shape-divider-top-1709027491 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 0;
+}
+
+.custom-shape-divider-top-1709027491 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 170px;
+}
+
+.custom-shape-divider-top-1709027491 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1709027491 svg {
+      width: calc(100% + 1.3px);
+      height: 135px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1709027491 svg {
+      width: calc(100% + 1.3px);
+      height: 110px;
+  }
+}
+
+.custom-shape-divider-bottom-1709027578 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709027578 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 170px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1709027578 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1709027578 svg {
+      width: calc(100% + 1.3px);
+      height: 135px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1709027578 svg {
+      width: calc(100% + 1.3px);
+      height: 110px;
+  }
+}
+
+/* Our Work */
+
+.custom-shape-divider-top-1709027400 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1709027400 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 170px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1709027400 .shape-fill {
+  fill: #d4d4d8;
+  opacity: 30%;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1709027400 svg {
+      width: calc(100% + 1.3px);
+      height: 135px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1709027400 svg {
+      width: calc(100% + 1.3px);
+      height: 110px;
+  }
+}
+
+.custom-shape-divider-bottom-1709027714 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709027714 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 170px;
+}
+
+.custom-shape-divider-bottom-1709027714 .shape-fill {
+  fill: #d4d4d8;
+  opacity: 30%;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1709027714 svg {
+      width: calc(100% + 1.3px);
+      height: 135px;
+  }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1709027714 svg {
+      width: calc(100% + 1.3px);
+      height: 110px;
+  }
+}
+
+.custom-shape-divider-bottom-1709063882 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709063882 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 172px;
+}
+
+.custom-shape-divider-bottom-1709063882 .shape-fill {
+  fill: #e5e7eb;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1709063882 svg {
+      width: calc(170% + 1.3px);
+      height: 129px;
+  }
+}
