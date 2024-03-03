@@ -20,9 +20,9 @@ const Home = ({ setSelectedPage }: Props) =>
 			id={`${SelectedPage.Home}`}
 			className="w-full min-h-min mt-[70px]"
 		>
-			<div className="relative h-screen">
+			<div className="relative h-[90vh]">
 			<div>
-					<div className="absolute z-10 w-full h-full bg-black bg-opacity-35" />
+					<div className="absolute z-10 w-full bg-black h-[95%] bg-opacity-35" />
 					<video src={VideoBg} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
 				</div>
 
@@ -33,7 +33,7 @@ const Home = ({ setSelectedPage }: Props) =>
 				>
 					{/* MAIN HEADER */}
 					<div
-						className="z-10 m-[110px] flex flex-col md:basis-4/5 opacity-100 hover:bg-slate-800 hover:bg-opacity-20 duration-200 rounded-xl shadow-zinc-700 shadow-lg p-[30px] items-end">
+						className="z-10 md:m-[110px] m-[10px] flex flex-col md:basis-4/5 opacity-100 hover:bg-slate-800 hover:bg-opacity-20 duration-200 rounded-xl shadow-zinc-700 shadow-lg p-[30px] items-end">
 						{/* HEADINGS */}
 						<motion.div
 							initial="hidden"

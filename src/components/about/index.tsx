@@ -36,7 +36,7 @@ const About = ({ setSelectedPage }: Props) => {
   return (
     <div className="flex flex-col">
       
-      <section id={`${SelectedPage.About}`} className="relative flex flex-col items-center justify-center w-full px-6 py-12 mx-auto my-5 bg-zinc-300 bg-opacity-30 ">
+      <section id={`${SelectedPage.About}`} className="relative flex flex-col items-center justify-center w-full md:mx-8 md:py-5 md:px-6 md:my-2 auto bg-zinc-300 bg-opacity-30 mt-[-40px]">
         <div className="custom-shape-divider-top-1709027491">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
@@ -79,7 +79,7 @@ const About = ({ setSelectedPage }: Props) => {
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
           </svg>
         </div>
-        <div className="relative z-20 ">
+        <div className="relative z-20 mt-[-190px] md:pt-0">
         <AboutContent />
 
         {/* button */}
