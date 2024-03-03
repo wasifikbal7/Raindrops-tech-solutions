@@ -26,7 +26,7 @@ export const ImageCard = ({ name, description, image, alt }: WorkImageCardProps)
 
   return (
     <Card className={overlayStyles}>
-      <div className='flex flex-col items-center justify-between whitespace-normal h-80 md:h-[460px]'>
+      <div className='flex flex-col items-center justify-between whitespace-normal h-[400px] md:h-[460px]'>
         <CardHeader >
           <CardTitle className={'text-slate-700'}>{name}</CardTitle>
           <div className='pt-4'>
@@ -34,7 +34,7 @@ export const ImageCard = ({ name, description, image, alt }: WorkImageCardProps)
         </div>
         </CardHeader>
         <CardContent className={'align-bottom'}>
-          <img alt={`${alt}`} src={image} className='h-24 md:align-bottom md:h-32 object-cover rounded-lg w-52 md:w-72' />
+          <img alt={`${alt}`} src={image} className='object-cover rounded-lg h-[105px] md:align-bottom md:h-32 w-52 md:w-72' />
         </CardContent>
       </div>
     </Card>
