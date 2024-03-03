@@ -72,12 +72,12 @@ const Slider: React.FC = () => {
                     {Works.map((item: ClassType, index) => (
 
                         <div key={index} className={`item ${index === itemActive ? 'active' : ''}`}>
-                            <button title='Prev Button' id="prev" className="prevarrows" onClick={handlePrevClick}><GrPrevious /></button>
+                            <button title='Prev Button' id="prevWorkBtn" className="prevarrows" onClick={handlePrevClick}><GrPrevious /></button>
                             <>
                                 <div className='bg-black absolute w-full h-full z-[79] bg-opacity-50' />
                                 <img src={item.image} alt={item.alt} width={1200} height={650}></img>
                             </>
-                            <button title='Next Button' id="next" className="nextarrows" onClick={handleNextClick}> <GrNext /></button>
+                            <button title='Next Button' id="nextWorkBtn" className="nextarrows" onClick={handleNextClick}> <GrNext /></button>
                             <div className="content">
                                 <p> {item.type}</p>
                                 <h2>{item.name}</h2>

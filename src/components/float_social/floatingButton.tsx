@@ -20,6 +20,7 @@ const SocialMediaButton: React.FC = () =>
 				whileHover={{ scale: 1.1 }}
 				whileTap={{ scale: 0.9 }}
 				onClick={handleClick}
+				title='Share on social media'
 			>
 				<IoShareSocial className={`${isOpen ? 'rotate-180 duration-500' : '-rotate-0 duration-500'} w-10 h-10`} />
 			</motion.button>

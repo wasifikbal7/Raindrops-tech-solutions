@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
                 >
                     {({ errors, touched, isValid, isSubmitting, dirty }) => (
                         <>
-                        <Card className="w-[600px]">
+                        <Card className="md:w-[600px]">
                             <CardContent className="mt-6 h-fit">
                                 <Form className="py-5">
                                     <Field
