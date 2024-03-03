@@ -4,7 +4,7 @@
 /* css slider */
 .slider{
     width: 97vw;
-    height: 73vh;
+    height: 100vh;
     margin-top: 50px;
     position: relative;
     border-radius: 15px;
@@ -26,7 +26,7 @@
 }
 .slider .list .item{
     height: 100vh;
-    width: 95;
+    width: 97vw;
     position: absolute;
     inset: 0 0 0 0;
     overflow: hidden;
@@ -39,7 +39,7 @@
 
     .slider .list .item{
         height: 85vh;
-        width: 95;
+        width: 95vw;
         position: absolute;
         inset: 0 0 0 0;
         overflow: hidden;
@@ -155,7 +155,7 @@
     
 .thumbnail{
     position: relative;
-    bottom: 50px;
+    bottom: 270px;
     z-index: 21;
     display: flex;
     gap: 10px;
