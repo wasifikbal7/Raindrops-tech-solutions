@@ -39,7 +39,7 @@
 
     .slider .list .item{
         height: 85vh;
-        width: 95vw;
+        width: 96.5vw;
         position: absolute;
         inset: 0 0 0 0;
         overflow: hidden;
@@ -77,10 +77,10 @@
 
 .slider .list .item .content p:nth-child(1){
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 .slider .list .item .content h2{
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
 }
 .slider .list .item.active{
