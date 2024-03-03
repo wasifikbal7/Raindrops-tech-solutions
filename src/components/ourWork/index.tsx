@@ -41,8 +41,8 @@ const ourDemo = ({ setSelectedPage }: Props) => {
           className="w-5/6 pt-3 mx-auto mt-4 mb-5 pb-7"
         >
           <div className="flex flex-col items-center justify-center text-center md:w-full">
-            <HText>Portfolio</HText>
-            <p className="py-5 text-xl leading-relaxed">
+            <HText><div className="text-6xl md:text-4xl">Portfolio</div></HText>
+            <p className="py-5 text-2xl md:text-xl leading-relaxed">
               Our work ethic makes us one of India&apos;s best web design companies. Flown Developer forms a major part of the list of the top design services.
             </p>
           </div>

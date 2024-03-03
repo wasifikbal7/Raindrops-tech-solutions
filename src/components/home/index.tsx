@@ -105,14 +105,14 @@ const Home = ({ setSelectedPage }: Props) =>
 							}}
 						>
 							<div className="text-white transition-transform active:scale-90">
-								<ActionButton variant="secondary" setSelectedPage={setSelectedPage} className='font-bold rounded-[65px] text-slate-800 hover:border-black hover:border-2'>
+								<ActionButton variant="secondary" setSelectedPage={setSelectedPage} size="lg" className='font-bold rounded-[65px] border-2 transition-all duration-200 border-slate-600 text-slate-800 hover:border-black hover:border-2'>
 									HIRE US
 								</ActionButton>
 							</div>
 							<AnchorLink
 								className="p-3 text-sm font-bold text-gray-100 underline duration-300 ease-in-out hover:text-teal-500"
-								onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-								href={`#${SelectedPage.ContactUs}`}
+								onClick={() => setSelectedPage(SelectedPage.About)}
+								href={`#${SelectedPage.About}`}
 							>
 								<p>Learn More</p>
 							</AnchorLink>

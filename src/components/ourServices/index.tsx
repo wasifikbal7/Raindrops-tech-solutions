@@ -38,8 +38,8 @@ const OurServices = ({ setSelectedPage }: Props) => {
           className="z-10 w-5/6 pt-2 mx-auto mt-2 mb-5 pb-7"
         >
           <div className="flex flex-col items-center justify-center text-center md:w-full">
-            <HText>What We Offer</HText> 
-            <p className="py-5 text-xl leading-relaxed">
+            <HText><div className="text-6xl sm:text-4xl">What We Offer</div></HText> 
+            <p className="py-5 text-2xl px-2 leading-relaxed">
             Raindrops Tech Solutions is dedicated to providing innovative and cutting-edge solutions to our clients. We specialize in developing software, designing websites, and providing IT consulting services. Our team of experts is passionate about technology and is committed to delivering the best possible results for our clients. We believe in building long-term relationships with our clients and providing them with the highest level of customer service. Our goal is to help our clients achieve their business objectives by leveraging the latest technologies and best practices in the industry.
             </p>
           </div>

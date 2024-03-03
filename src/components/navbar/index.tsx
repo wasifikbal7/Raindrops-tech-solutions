@@ -85,7 +85,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-50 bg-opacity-80 h-full backdrop-blur-sm w-[300px] bg-green-100">
+        <div className="fixed right-0 bottom-0 z-50 bg-opacity-80 h-full backdrop-blur-sm w-[300px] bg-sky-100">
           {/* CLOSE ICON */}
           <div className={`flex justify-end p-5 mr-2`}>
             <button onClick={() => setIsMenuToggled(!isMenuToggled)} type={'button'}  title="Href">

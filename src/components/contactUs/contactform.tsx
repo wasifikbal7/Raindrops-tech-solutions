@@ -27,7 +27,7 @@ const ContactForm: React.FC = () => {
     const toggleToast = () =>  setOpenToast(!openToast);
 
     return (
-        <div className=" md:justify-between md:align-top md:items-center md:flex">
+        <div className=" md:justify-between md:align-top md:items-center md:flex flex flex-col items-center justify-center">
             <motion.div
                 className="my-8 basis-5/6 md:mt-5"
                 initial="hidden"

@@ -34,7 +34,7 @@ const AboutContent = () => {
       {/* GRAPHIC */}
 
       {/* DESCRIPTION */}
-      <div className="flex flex-col relative z-20 items-center justify-center px-4 mx-2">
+      <div className="flex flex-col relative z-20 items-center justify-center px-2 mx-2 sm:px-4 sm:mx-2">
         {/* TITLE */}
         <div className="relative">
 
@@ -49,7 +49,7 @@ const AboutContent = () => {
             }}
           >
             <HText>
-              <div className="text-center text-5xl pb-28 ">
+              <div className="text-center text-5xl mt-[-60px] pb-28 ">
                 Why Us
               </div>
             </HText>

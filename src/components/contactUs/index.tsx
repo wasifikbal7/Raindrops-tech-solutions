@@ -97,7 +97,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 
   return (
-    <section id={`${SelectedPage.ContactUs}`} className="relative w-full py-20 pl-20 pr-12 mx-auto mt-3 text-center bg-sky-100">
+    <section id={`${SelectedPage.ContactUs}`} className="relative w-full px-12 mx-auto mt-3 text-center bg-sky-100">
       {/* <div className="h-full w-full absolute border-t-[25px] border-l-[55px] border-b-[25px] 
       border-solid border-t-transparent border-b-transparent border-l-[#555]" /> */}
       <motion.div
@@ -113,12 +113,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-slate-800">Get in Touch With Us</span>
+            <span className="text-slate-800 text-6xl">Get in Touch With Us</span>
           </HText>
-          <div className="px-12 pt-8 justify-items-center ">
+          <div className="pt-8 md:px-12 justify-items-center ">
 
-            <p className="my-5 text-xl leading-relaxed text-center md:px-16 ">
-              We are always happy to hear from you! If you have any questions or comments about our services, please don’t hesitate to get in touch with us. You can reach us via email at contact@yourcompany.com or by phone at +91-1234567890. Alternatively, you can fill out the contact form on our website and we’ll get back to you as soon as possible. We look forward to hearing from you soon!
+            <p className="my-5 text-2xl leading-relaxed text-center md:px-16 ">
+              We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at contact@yourcompany.com or by phone at +91-1234567890. Alternatively, you can fill out the contact form on our website and we’ll get back to you as soon as possible. We look forward to hearing from you soon!
             </p>
           </div>
         </motion.div>
@@ -128,7 +128,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
         <div className="items-center justify-between pt-12 gap-y-2 md:flex md:items-center md:justify-around">
 
           {/* <ContactForm /> */}
-          <div className=" md:justify-between md:align-top md:items-center md:flex">
+          <div className="flex flex-col mb-12 md:justify-between md:align-top md:items-center md:flex">
             <motion.div
               className="my-8 basis-3/5 md:mt-0"
               initial="hidden"
@@ -160,7 +160,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 
 
-              <div className="w-full flex flex-col items-center justify-center before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
+              <div className="w-full items-center justify-center before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
                 <img
                   className="items-center w-full py-5 md:py-4 md:w-96"
                   alt="contact-us-page-graphic"

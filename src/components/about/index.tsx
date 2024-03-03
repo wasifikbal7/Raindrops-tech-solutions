@@ -58,13 +58,13 @@ const About = ({ setSelectedPage }: Props) => {
             }}
           >
 
-              <HText><div className="text-4xl">More About Us</div></HText>
-              <div className="px-12 pt-8 justify-items-center ">
-                <p className="px-16 my-5 text-xl leading-relaxed text-center md:px-48">
+              <HText><div className="text-6xl md:text-4xl">More About Us</div></HText>
+              <div className="justify-items-center ">
+                <p className="py-8 my-5 text-2xl leading-relaxed text-center md:px-48">
                   100% Trusted and Registered Company in India with a professional website that provides the best web development and web design services in India. We are a company that offers multi-functional web portals, and we make sure that a well-developed and attractive website can help our clients to record ROI-driven results.
                 </p>
               </div>
-              <img src={StockUI} alt="UI" className="w-full border-2 shadow-lg border-slate-500 rounded-2xl shadow-slate-400" />
+              <img src={StockUI} alt="UI" className="w-full border-2 shadow-lg border-slate-500 rounded-2xl shadow-slate-400 sm" />
           </motion.div>
         </motion.div>
         <div className="custom-shape-divider-bottom-1709027578">
