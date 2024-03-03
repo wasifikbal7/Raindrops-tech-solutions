@@ -47,7 +47,7 @@ const ourDemo = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
-        <div className="w-full h-full mx-3 my-5 xs:pb-4 sm:py-8">
+        <div className="w-full h-full mx-3 my-5 mb-[-60px] xs:pb-4 sm:py-8 md:mb-0">
           < Slider />
          
        
