@@ -3,20 +3,52 @@
 
 /* css slider */
 .slider{
-    width: auto;
-    height: 72vh;
+    width: 97vw;
+    height: 100vh;
     margin-top: 50px;
     position: relative;
     border-radius: 15px;
+    left: 10px;
+    box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) ;
+
+
+}
+@media screen and (max-width: 600px) {
+    .slider{
+        width: 96vw;
+        height: 85vh;
+        margin-top: 50px;
+        position: relative;
+        border-radius: 15px;
+        left: 10px;
+        box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) ;
+    }
 }
 .slider .list .item{
     height: 100vh;
-    width: auto;
+    width: 97vw;
     position: absolute;
     inset: 0 0 0 0;
     overflow: hidden;
     opacity: 0;
     transition: .5s;
+    box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) ;
+
+}
+@media screen and (max-width: 600px) {
+
+    .slider .list .item{
+        height: 85vh;
+        width: 96.5vw;
+        position: absolute;
+        inset: 0 0 0 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: .5s;
+        box-shadow: #64748b;
+        box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) ;
+
+    }
 }
 .slider .list .item img{
     width: 100%;
@@ -34,18 +66,21 @@
 .slider .list .item .content{
     position: absolute;
     left: 10%;
-    top: 20%;
+    top: 8%;
     width: 300px;
     max-width: 80%;
+    min-width: 55%;
     z-index: 1;
-    color: #f4f4f4;
+    color:rgba(12, 234, 171, 0.908);
 }
+
+
 .slider .list .item .content p:nth-child(1){
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 .slider .list .item .content h2{
-    font-size: 4rem;
+    font-size: 2rem;
     margin: 0;
 }
 .slider .list .item.active{
@@ -93,6 +128,8 @@
     color: rgb(239, 230, 243);
     transition: 1s;
 }
+ 
+
 .prevarrows:hover{
     color:rgba(20, 183, 167, 0.89);
 }
@@ -115,23 +152,46 @@
     color:rgba(20, 183, 167, 0.89);
 }
 
+    
 .thumbnail{
     position: relative;
-    bottom: 50px;
+    bottom: 270px;
     z-index: 21;
     display: flex;
     gap: 10px;
-    width: 100%;
+    width: 95vw;
     height: 250px;
     padding: 0 50px;
     box-sizing: border-box;
     overflow: auto;
     justify-content: center;
+    left:50px;
 }
+
+/* Apply styles only for screens with a maximum width of 600px (typical for mobile devices) */
+@media screen and (max-width: 600px) {
+    .thumbnail {
+        position: relative;
+        bottom: 160px;
+        z-index: 21;
+        display: flex;
+        gap: 10px;
+        width: 88vw; /* Note: I corrected the unit to 'vw' (viewport width) */
+        height: 250px;
+        padding: 0 20px; /* Adjusted padding for smaller screens */
+        box-sizing: border-box;
+        overflow: auto;
+        justify-content: center;
+        left:33px;
+        
+    }
+}
+
 .thumbnail::-webkit-scrollbar{
     width: 0;
 }
-.thumbnail .item{
+
+    .thumbnail .item{
     
     width: 150px;
     height: 220px;
@@ -139,6 +199,18 @@
     transition: .5s;
     flex-shrink: 0;
 }
+
+@media screen and (max-width: 600px) {
+.thumbnail .item{
+    bottom: 10px;
+    width: 86.8px;
+    height: 120px;
+    filter: brightness(.5);
+    transition: .5s;
+    flex-shrink: 0;
+}
+}
+
 .thumbnail .item img{
     width: 100%;
     height: 100%;

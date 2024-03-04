@@ -36,7 +36,7 @@ const About = ({ setSelectedPage }: Props) => {
   return (
     <div className="flex flex-col">
       
-      <section id={`${SelectedPage.About}`} className="relative flex flex-col items-center justify-center w-full px-6 py-12 mx-auto my-5 bg-zinc-300 bg-opacity-30 ">
+      <section id={`${SelectedPage.About}`} className="relative flex flex-col items-center justify-center w-full md:mx-8 md:py-5 md:px-6 md:my-2 auto bg-zinc-300 bg-opacity-30 mt-[-40px]">
         <div className="custom-shape-divider-top-1709027491">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
@@ -79,7 +79,7 @@ const About = ({ setSelectedPage }: Props) => {
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
           </svg>
         </div>
-        <div className="relative z-20 ">
+        <div className="relative z-20 mt-[-190px] md:pt-0">
         <AboutContent />
 
         {/* button */}
@@ -88,10 +88,10 @@ const About = ({ setSelectedPage }: Props) => {
             <motion.div
               initial="hidden"
               whileInView={"visible"}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: 1.3, duration: 0.5 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ delay: 1, duration: 0.3 }}
               variants={{
-                hidden: { opacity: 0, y: 50 },
+                hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
               }}
             >
