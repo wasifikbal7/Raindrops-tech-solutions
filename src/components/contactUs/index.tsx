@@ -72,7 +72,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           <div className="pt-8 md:px-12 justify-items-center ">
 
             <p className="my-5 text-2xl leading-relaxed text-center md:px-16 ">
-              We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at contact@yourcompany.com or by phone at +91-1234567890. Alternatively, you can fill out the contact form on our website and we’ll get back to you as soon as possible. We look forward to hearing from you soon!
+              We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at contact@raindropstechsolutions.com or by phone at +91-9876543210. Alternatively, you can fill out the contact form on our website and we&apos;ll get back to you as soon as possible. We look forward to hearing from you soon!
             </p>
           </div>
         </motion.div>
