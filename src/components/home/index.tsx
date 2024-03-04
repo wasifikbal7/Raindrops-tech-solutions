@@ -33,7 +33,7 @@ const Home = ({ setSelectedPage }: Props) =>
 				>
 					{/* MAIN HEADER */}
 					<div
-						className="z-10 md:m-[110px] m-[10px] flex flex-col md:basis-4/5 opacity-100 hover:bg-slate-800 hover:bg-opacity-20 duration-200 rounded-xl shadow-zinc-700 shadow-lg p-[30px] items-end">
+						className="z-10 md:m-28 m-3 md:mt-28 mt-32 flex flex-col md:basis-4/5 opacity-100 hover:bg-slate-800 hover:bg-opacity-20 duration-200 rounded-xl shadow-zinc-700 shadow-lg p-[30px] items-end">
 						{/* HEADINGS */}
 						<motion.div
 							initial="hidden"
