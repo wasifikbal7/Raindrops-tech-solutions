@@ -36,7 +36,7 @@ const About = ({ setSelectedPage }: Props) => {
   return (
     <div className="flex flex-col">
       
-      <section id={`${SelectedPage.About}`} className="relative flex flex-col items-center justify-center w-full md:mx-8 md:py-5 md:px-6 md:my-2 auto bg-zinc-300 bg-opacity-30 mt-[-40px]">
+      <section id={`${SelectedPage.About}`} className="relative my-5 flex flex-col items-center justify-center w-full pb-12 md:px-12 bg-zinc-300 bg-opacity-30">
         <div className="custom-shape-divider-top-1709027491">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
@@ -49,7 +49,7 @@ const About = ({ setSelectedPage }: Props) => {
           
           {/* HEADER */}
           <motion.div
-            className="text-center md:w-full"
+            className="text-center my-5 md:w-full"
             ref={ref}
             style={{
               scale: scaleProgress,
@@ -64,7 +64,7 @@ const About = ({ setSelectedPage }: Props) => {
                   100% Trusted and Registered Company in India with a professional website that provides the best web development and web design services in India. We are a company that offers multi-functional web portals, and we make sure that a well-developed and attractive website can help our clients to record ROI-driven results.
                 </p>
               </div>
-              <img src={StockUI} alt="UI" className="w-full border-2 shadow-lg border-slate-500 rounded-2xl shadow-slate-400 sm" />
+              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="w-full border-2 shadow-lg border-slate-500 rounded-2xl shadow-slate-400 my-5" />
           </motion.div>
         </motion.div>
         <div className="custom-shape-divider-bottom-1709027578">
@@ -73,13 +73,14 @@ const About = ({ setSelectedPage }: Props) => {
           </svg>
         </div>
       </section>
+
       <div className="relative my-5">
         <div className="custom-shape-divider-top-1709027400">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
           </svg>
         </div>
-        <div className="relative z-20 mt-[-190px] md:pt-0">
+        <div className="relative z-20 md:pt-0">
         <AboutContent />
 
         {/* button */}
