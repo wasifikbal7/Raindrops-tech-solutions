@@ -106,7 +106,7 @@ const Home = ({ setSelectedPage }: Props) =>
 						>
 							<div className="text-white transition-transform active:scale-90">
 								<ActionButton variant="secondary" setSelectedPage={setSelectedPage} size="lg" className='font-bold rounded-[65px] border-2 transition-all duration-200 border-slate-600 text-slate-800 hover:border-black hover:border-2'>
-									HIRE US
+									Hire Us
 								</ActionButton>
 							</div>
 							<AnchorLink
