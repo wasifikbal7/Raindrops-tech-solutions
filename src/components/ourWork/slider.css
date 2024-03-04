@@ -5,11 +5,11 @@
 .slider{
     width: 97vw;
     height: 100vh;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     position: relative;
     border-radius: 15px;
     left: 10px;
-    box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) ;
+    box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) 3;
 
 
 }
@@ -182,7 +182,7 @@
         box-sizing: border-box;
         overflow: auto;
         justify-content: center;
-        left:33px;
+        left: 13%;
         
     }
 }

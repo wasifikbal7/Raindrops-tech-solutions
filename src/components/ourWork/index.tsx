@@ -24,7 +24,7 @@ const ourDemo = ({ setSelectedPage }: Props) => {
   const opacityProgress = useTransform(scrollYProgress, [0,1], [ 0.6, 1 ]);
 
   return (
-    <section id={`${SelectedPage.Demo}`} className="relative flex flex-col items-center justify-center w-full pt-6 text-center md:pt-0 md:mb-5 md:pb-5">
+    <section id={`${SelectedPage.Demo}`} className="relative flex flex-col items-center justify-center w-full text-center my-5 md:my-5">
       <div className="custom-shape-divider-top-1709027400">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
@@ -47,7 +47,7 @@ const ourDemo = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
-        <div className="w-full h-full mx-3 my-5 mb-[-60px] xs:pb-4 sm:py-8 md:mb-0">
+        <div className="w-full h-full mx-3 md:my-2">
           < Slider />
          
        
