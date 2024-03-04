@@ -14,21 +14,22 @@ const SocialMediaButton: React.FC = () =>
 	};
 
 	return (
-		<div className="fixed bottom-6 left-4 z-50">
+		<div className="fixed z-50 bottom-6 left-4">
 			<motion.button
-				className='pl-[12px] bg-transparent rounded-[50%] shadow-lg w-16 h-16 transition-all duration-100 hover:shadow-slate-600'
+				className='md:pl-[12px] pl-[8px] bg-transparent rounded-[50%] shadow-lg md:w-16 md:h-16 w-12 h-12 transition-all duration-100 hover:shadow-slate-600'
 				whileHover={{ scale: 1.1 }}
 				whileTap={{ scale: 0.9 }}
 				onClick={handleClick}
+				title='Share on social media'
 			>
-				<IoShareSocial className={`${isOpen ? 'rotate-180 duration-500' : '-rotate-0 duration-500'} w-10 h-10`} />
+				<IoShareSocial className={`${isOpen ? 'rotate-180 duration-500' : '-rotate-0 duration-500'} md:w-10 md:h-10 w-8 h-8`} />
 			</motion.button>
 			{isOpen && (
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.3 }}
-					className="bg-transparent fixed bottom-24 left-8 z-50"
+					className="fixed z-50 bg-transparent bottom-24 left-8"
 				>
 					{MediaData.map((link, index) => (
 						<a
@@ -36,7 +37,7 @@ const SocialMediaButton: React.FC = () =>
 							href={link.href}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="flex items-center p-2 bg-transparent hover:scale-150 transition-shadow duration-500 ease-in-out"
+							className="flex items-center p-2 transition-shadow duration-500 ease-in-out bg-transparent hover:scale-150"
 						>
 							{link.img}
 						</a>

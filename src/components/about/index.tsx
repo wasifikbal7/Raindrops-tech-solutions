@@ -36,7 +36,7 @@ const About = ({ setSelectedPage }: Props) => {
   return (
     <div className="flex flex-col">
       
-      <section id={`${SelectedPage.About}`} className="relative flex flex-col items-center justify-center w-full px-6 py-12 mx-auto my-5 bg-zinc-300 bg-opacity-30 ">
+      <section id={`${SelectedPage.About}`} className="relative my-5 flex flex-col items-center justify-center w-full pb-12 md:px-12 bg-zinc-300 bg-opacity-30">
         <div className="custom-shape-divider-top-1709027491">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
@@ -49,7 +49,7 @@ const About = ({ setSelectedPage }: Props) => {
           
           {/* HEADER */}
           <motion.div
-            className="text-center md:w-full"
+            className="text-center my-5 md:w-full"
             ref={ref}
             style={{
               scale: scaleProgress,
@@ -58,13 +58,13 @@ const About = ({ setSelectedPage }: Props) => {
             }}
           >
 
-              <HText><div className="text-4xl">More About Us</div></HText>
-              <div className="px-12 pt-8 justify-items-center ">
-                <p className="px-16 my-5 text-xl leading-relaxed text-center md:px-48">
+              <HText><div className="text-6xl md:text-4xl">More About Us</div></HText>
+              <div className="justify-items-center ">
+                <p className="py-8 my-5 text-2xl leading-relaxed text-center md:px-48">
                   100% Trusted and Registered Company in India with a professional website that provides the best web development and web design services in India. We are a company that offers multi-functional web portals, and we make sure that a well-developed and attractive website can help our clients to record ROI-driven results.
                 </p>
               </div>
-              <img src={StockUI} alt="UI" className="w-full border-2 shadow-lg border-slate-500 rounded-2xl shadow-slate-400" />
+              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="w-full border-2 shadow-lg border-slate-500 rounded-2xl shadow-slate-400 my-5" />
           </motion.div>
         </motion.div>
         <div className="custom-shape-divider-bottom-1709027578">
@@ -73,13 +73,14 @@ const About = ({ setSelectedPage }: Props) => {
           </svg>
         </div>
       </section>
+
       <div className="relative my-5">
         <div className="custom-shape-divider-top-1709027400">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
           </svg>
         </div>
-        <div className="relative z-20 ">
+        <div className="relative z-20 md:pt-0">
         <AboutContent />
 
         {/* button */}
@@ -88,10 +89,10 @@ const About = ({ setSelectedPage }: Props) => {
             <motion.div
               initial="hidden"
               whileInView={"visible"}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ delay: 1.3, duration: 0.5 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{ delay: 1, duration: 0.3 }}
               variants={{
-                hidden: { opacity: 0, y: 50 },
+                hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
               }}
             >

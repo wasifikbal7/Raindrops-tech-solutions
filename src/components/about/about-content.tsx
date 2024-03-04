@@ -34,7 +34,7 @@ const AboutContent = () => {
       {/* GRAPHIC */}
 
       {/* DESCRIPTION */}
-      <div className="flex flex-col relative z-20 items-center justify-center px-4 mx-2">
+      <div className="relative z-20 flex flex-col items-center justify-center px-2 mx-2 sm:px-4 sm:mx-2">
         {/* TITLE */}
         <div className="relative">
 
@@ -49,7 +49,7 @@ const AboutContent = () => {
             }}
           >
             <HText>
-              <div className="text-center text-5xl pb-28 ">
+              <div className="text-center text-5xl mt-[-60px] pb-28 ">
                 Why Us
               </div>
             </HText>
@@ -83,12 +83,12 @@ const AboutContent = () => {
                     hidden: { opacity: 0, y: 50 },
                     visible: { opacity: 1, y: 0 },
                   }}
-                  className="my-2"
+                  className="md:my-2"
                 >
                   <Card className="duration-150 ease-in-out shadow-md hover:shadow-lg">
                     <CardHeader className="text-3xl font-bold text-center">{item.name}</CardHeader>
                     <CardContent className="text-xl font-[600] text-center">
-                      <p className="my-1 p-4">
+                      <p className="p-4 my-1">
                         {item.description}
                       </p>
                     </CardContent>

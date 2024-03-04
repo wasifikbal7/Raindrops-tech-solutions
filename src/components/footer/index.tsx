@@ -16,14 +16,14 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) =>
 			<div className="flex flex-col items-center justify-between mx-8">
 				<div className="w-11/12 py-12 mx-auto gap-11 justify-center md:flex md:flex-row ">
 					<div className="basis-2/5">
-						<a href="#home"><img alt="logo" src={Logo} className="w-48" />
+						<a href="#home"><img alt="logo" src={Logo} className="w-68 md:w-48" />
 						</a>
 						<p className="my-5 text-base">
 						Raindrops Tech Solution is an innovative IT and Web Technology company. We specialize in delivering cutting-edge digital solutions to empower businesses. Our services range from web development to IT consulting, all tailored to meet your unique needs. With Raindrops Tech Solution, experience the fusion of technology and innovation that drives success.
 						</p>
 					</div>
 					<div className="flex flex-col items-center mt-16 basis-1/5 md:mt-6">
-						<h4 className="text-lg font-bold">Links</h4>
+						<h4 className="text-xl font-bold">Links</h4>
 						<br></br>
 						<div className="flex flex-col items-center">
 							<Link
@@ -44,7 +44,7 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) =>
 						</div>
 					</div>
 					<div className="flex flex-col items-center mt-16 text-center basis-1/5 md:mt-6">
-						<h4 className="mb-3 text-lg font-bold" >Contact Us</h4>
+						<h4 className="mb-3 text-xl font-bold" >Contact Us</h4>
 						<p className="my-2 transition duration-500 hover:text-slate-700 hover:font-semibold ">
 
 							<a href="maps:Jadavpur,kolkata,

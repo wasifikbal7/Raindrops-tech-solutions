@@ -24,7 +24,7 @@ const ourDemo = ({ setSelectedPage }: Props) => {
   const opacityProgress = useTransform(scrollYProgress, [0,1], [ 0.6, 1 ]);
 
   return (
-    <section id={`${SelectedPage.Demo}`} className="relative flex flex-col items-center justify-center w-full pb-5 mb-5 text-center">
+    <section id={`${SelectedPage.Demo}`} className="relative flex flex-col items-center justify-center w-full text-center my-5 md:my-5">
       <div className="custom-shape-divider-top-1709027400">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
@@ -41,13 +41,13 @@ const ourDemo = ({ setSelectedPage }: Props) => {
           className="w-5/6 pt-3 mx-auto mt-4 mb-5 pb-7"
         >
           <div className="flex flex-col items-center justify-center text-center md:w-full">
-            <HText>Portfolio</HText>
-            <p className="py-5 text-xl leading-relaxed">
+            <HText><div className="text-6xl md:text-4xl md:pt-6 md:mt-6">Portfolio</div></HText>
+            <p className="py-5 text-2xl leading-relaxed md:text-xl">
               Our work ethic makes us one of India&apos;s best web design companies. Flown Developer forms a major part of the list of the top design services.
             </p>
           </div>
         </motion.div>
-        <div className="w-full h-full mx-3 xs:pb-4 sm:py-8 my-5">
+        <div className="w-full h-full mx-3 md:my-2">
           < Slider />
          
        

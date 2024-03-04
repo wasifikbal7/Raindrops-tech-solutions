@@ -58,6 +58,7 @@ const ActionButton =
 			className={cn(buttonVariants({ variant, size, className }))}
 			onClick={() => setSelectedPage(SelectedPage.ContactUs)}
 			href={`#${SelectedPage.ContactUs}`}
+      aria-label="Button"
 		>
 			{children}
 		</AnchorLink>
