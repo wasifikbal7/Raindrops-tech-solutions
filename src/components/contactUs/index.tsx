@@ -79,10 +79,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 
         {/* FORM AND IMAGE */}
-        <div className="flex flex-row items-center justify-between pt-12 gap-y-2 md:flex md:items-center md:justify-around">
+        <div className="flex flex-col items-center justify-between pt-12 md:flex-row gap-y-2 md:flex md:items-center md:justify-around">
 
           {/* <ContactForm /> */}
-          <div className="flex flex-row mb-12 md:justify-between md:align-top md:items-center md:flex">
+          <div className="flex flex-col mb-12 md:flex-row md:justify-between md:align-top md:items-center md:flex">
             <div><motion.div
               className="my-8 basis-3/5 md:mt-0"
               initial="hidden"
