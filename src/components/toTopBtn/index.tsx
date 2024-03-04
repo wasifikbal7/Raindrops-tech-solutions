@@ -24,7 +24,7 @@ export const ToTopBtn = () => {
             <div className=''>
             {toTopBtn && (
                 <button title='ToTopButton' 
-                className='fixed z-50 p-1 text-2xl text-black transition-colors duration-300 ease-in-out bg-transparent rounded-full shadow-lg md:text-5xl hover:text-slate-600 hover:bg-gray-300 bottom-6 right-4 hover:shadow-slate-600 md:p-2'
+                className='fixed z-50 p-1 text-5xl text-black transition-colors duration-300 ease-in-out bg-transparent rounded-full shadow-lg md:text-5xl hover:text-slate-600 hover:bg-gray-300 bottom-6 right-4 hover:shadow-slate-600 md:p-2'
                  onClick={ScrollUp} id="topBtn">
                     <IoChevronUpCircleOutline />
                 </button>
