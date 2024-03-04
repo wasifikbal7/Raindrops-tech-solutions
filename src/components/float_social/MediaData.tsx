@@ -15,7 +15,7 @@ const MediaData: Array<Social> = [
 	{
 		img: <FaFacebookSquare className="w-[22px] h-[22px] hover:fill-[#1877F2]" />,
 		title: "facebook",
-		href: "https://www.facebook.com",
+		href: "https://www.facebook.com/raindropstechsolutions/",
 		alt: "FACEBOOK",
 	},
 	{
@@ -34,7 +34,7 @@ const MediaData: Array<Social> = [
 	{
 		img: <IoLogoWhatsapp className="w-[22px] h-[22px] hover:fill-[#25D366] hover:text-[#ffff]" />,
 		title: "whatsapp",
-		href: " https://wa.me/+919876543210",
+		href: " https://wa.me/+918637027140",
 		alt: "WHATSAPP",
 	},
 ]
