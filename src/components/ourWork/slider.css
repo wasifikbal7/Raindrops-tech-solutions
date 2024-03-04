@@ -9,19 +9,20 @@
     position: relative;
     border-radius: 15px;
     left: 10px;
-    box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) 3;
+    box-shadow: 0 0 10px 3px rgba(203, 213, 225, 0.8) ;
+
 
 
 }
 @media screen and (max-width: 600px) {
     .slider{
-        width: 96vw;
+        width: 96.5vw;
         height: 85vh;
         margin-top: 50px;
         position: relative;
         border-radius: 15px;
         left: 10px;
-        box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) ;
+        box-shadow: 0 0 10px 3px rgba(203, 213, 225, 0.8) ;
     }
 }
 .slider .list .item{
@@ -32,7 +33,7 @@
     overflow: hidden;
     opacity: 0;
     transition: .5s;
-    box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) ;
+    box-shadow: 0 0 10px 3px rgba(203, 213, 225, 0.8) ;
 
 }
 @media screen and (max-width: 600px) {
@@ -46,7 +47,7 @@
         opacity: 0;
         transition: .5s;
         box-shadow: #64748b;
-        box-shadow: 0 0 10px 3px rgba(2, 27, 55, 0.8) ;
+        box-shadow: 0 0 10px 3px rgba(203, 213, 225, 0.8) ;
 
     }
 }
@@ -159,13 +160,12 @@
     z-index: 21;
     display: flex;
     gap: 10px;
-    width: 95vw;
-    height: 250px;
-    padding: 0 50px;
+    width: 97.5vw;
+    height: 225px;
+    padding: 0 20px;
     box-sizing: border-box;
     overflow: auto;
     justify-content: center;
-    left:50px;
 }
 
 /* Apply styles only for screens with a maximum width of 600px (typical for mobile devices) */
@@ -176,13 +176,13 @@
         z-index: 21;
         display: flex;
         gap: 10px;
-        width: 88vw; /* Note: I corrected the unit to 'vw' (viewport width) */
-        height: 250px;
+        width: 98vw; /* Note: I corrected the unit to 'vw' (viewport width) */
+        height: 125px;
         padding: 0 20px; /* Adjusted padding for smaller screens */
         box-sizing: border-box;
         overflow: auto;
         justify-content: center;
-        left: 13%;
+        
         
     }
 }
@@ -230,9 +230,7 @@
     color: rgb(239, 230, 243);
 }
 @media screen and (max-width: 678px) {
-    .thumbnail{
-        justify-content: start;
-    }
+   
     .slider .list .item .content h2 h6{
         font-size: 60px;
     }
