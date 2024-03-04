@@ -89,7 +89,6 @@ const Slider: React.FC = () => {
                     )}
                 </div>
             </div>
-           
             <div className="thumbnail">
                 {Works.map((item: ClassType, index) => (
 
@@ -101,12 +100,13 @@ const Slider: React.FC = () => {
                             <h6> {item.type}</h6>
                             <p>{item.name}</p>
                         </div>
-                    </div>
+                   </div>
+                    
 
                 )
                 )}
             </div>
-        </div>
+            </div>
     )
 
 
