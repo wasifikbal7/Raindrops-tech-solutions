@@ -6,10 +6,8 @@ import ContactUsPageGraphic from "@/assets/contactsvg.svg";
 import HText from "@/components/shared/HText";
 import 'boxicons';
 import React, { useRef, useState } from 'react'
-import emailjs from 'emailjs-com';
 import ContactForm from "./contactform";
 import * as Yup from 'yup';
-import Toast from "./toast";
 
 
 
@@ -18,14 +16,6 @@ import Toast from "./toast";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
-
-// Define validation schema using Yup
-const validationSchema = Yup.object({
-  name: Yup.string().required('Name is required'),
-  contactNo: Yup.string().matches(/^[0-9]+$/, "Must be only digits").required('Contact number is required'),
-  email: Yup.string().email('Invalid email address').required('Email is required'),
-  message: Yup.string().required('Message is required'),
-});
 
 const ContactUs = ({ setSelectedPage }: Props) => {
  
