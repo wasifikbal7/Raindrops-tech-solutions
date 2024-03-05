@@ -6,10 +6,8 @@ import ContactUsPageGraphic from "@/assets/contactsvg.svg";
 import HText from "@/components/shared/HText";
 import 'boxicons';
 import React, { useRef, useState } from 'react'
-import emailjs from 'emailjs-com';
 import ContactForm from "./contactform";
 import * as Yup from 'yup';
-import Toast from "./toast";
 
 
 
@@ -18,14 +16,6 @@ import Toast from "./toast";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
-
-// Define validation schema using Yup
-const validationSchema = Yup.object({
-  name: Yup.string().required('Name is required'),
-  contactNo: Yup.string().matches(/^[0-9]+$/, "Must be only digits").required('Contact number is required'),
-  email: Yup.string().email('Invalid email address').required('Email is required'),
-  message: Yup.string().required('Message is required'),
-});
 
 const ContactUs = ({ setSelectedPage }: Props) => {
  
@@ -72,7 +62,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           <div className="pt-8 md:px-12 justify-items-center ">
 
             <p className="my-5 text-2xl leading-relaxed text-center md:px-16 ">
-              We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at contact@raindropstechsolutions.com or by phone at +91-9876543210. Alternatively, you can fill out the contact form on our website and we&apos;ll get back to you as soon as possible. We look forward to hearing from you soon!
+              We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at contact@yraindropstechsolutions.com or by phone at +91-8637027140. Alternatively, you can fill out the contact form on our website and we’ll get back to you as soon as possible. We look forward to hearing from you soon!
             </p>
           </div>
         </motion.div>
