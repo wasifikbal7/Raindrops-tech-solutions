@@ -16,13 +16,13 @@ const SocialMediaButton: React.FC = () =>
 	return (
 		<div className="fixed z-50 bottom-6 left-4">
 			<motion.button
-				className='md:pl-[12px] pl-[4px] bg-transparent rounded-[50%] shadow-lg md:w-16 md:h-16 w-9 h-9 transition-all duration-100 hover:shadow-slate-600'
+				className='md:pl-[12px] pl-[8px] bg-transparent rounded-[50%] shadow-lg md:w-16 md:h-16 w-12 h-12 transition-all duration-100 hover:shadow-slate-600'
 				whileHover={{ scale: 1.1 }}
 				whileTap={{ scale: 0.9 }}
 				onClick={handleClick}
 				title='Share on social media'
 			>
-				<IoShareSocial className={`${isOpen ? 'rotate-180 duration-500' : '-rotate-0 duration-500'} md:w-10 md:h-10 w-6 h-6`} />
+				<IoShareSocial className={`${isOpen ? 'rotate-180 duration-500' : '-rotate-0 duration-500'} md:w-10 md:h-10 w-8 h-8`} />
 			</motion.button>
 			{isOpen && (
 				<motion.div
