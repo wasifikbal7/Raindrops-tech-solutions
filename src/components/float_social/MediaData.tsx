@@ -35,12 +35,12 @@ const MediaData: Array<Social> = [
 	},
 
 	
-	{
-		img: <FaXTwitter className="w-[22px] h-[22px] hover:fill-white hover:text-[#ffff] hover:bg-black rounded-sm" />,
-		title: "whatsapp",
-		href: " https://wa.me/+918637027140",
-		alt: "WHATSAPP",
-	},
+	// {
+	// 	img: <FaXTwitter className="w-[22px] h-[22px] hover:fill-white hover:text-[#ffff] hover:bg-black rounded-sm" />,
+	// 	title: "whatsapp",
+	// 	href: " https://www.twitter.com/+918637027140",
+	// 	alt: "WHATSAPP",
+	// },
 	{
 		img: <FaYoutube className="w-[22px] h-[22px] hover:fill-[#FF0000]" />,
 		title: "youtube",
