@@ -1,5 +1,4 @@
 
-import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/components/shared/types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ContactUsPageGraphic from "@/assets/contactsvg.svg";
@@ -7,7 +6,6 @@ import HText from "@/components/shared/HText";
 import 'boxicons';
 import React, { useRef, useState } from 'react'
 import ContactForm from "./contactform";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
 
