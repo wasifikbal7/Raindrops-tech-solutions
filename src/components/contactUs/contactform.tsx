@@ -27,7 +27,7 @@ const ContactForm: React.FC = () => {
     const toggleToast = () =>  setOpenToast(!openToast);
 
     return (
-        <div className=" md:justify-between md:align-top md:items-center md:flex flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center md:justify-between md:align-top md:items-center md:flex">
             <motion.div
                 className="my-8 basis-5/6 md:mt-5"
                 initial="hidden"
@@ -63,7 +63,7 @@ const ContactForm: React.FC = () => {
                 >
                     {({ errors, touched, isValid, isSubmitting, dirty }) => (
                         <>
-                        <Card className="md:w-[600px]">
+                        <Card className="md:w-[40vw]">
                             <CardContent className="mt-6 h-fit">
                                 <Form className="py-5">
                                     <Field
@@ -71,6 +71,7 @@ const ContactForm: React.FC = () => {
                                         placeholder="NAME"
                                         id="name"
                                         type="text"
+                                        autocomplete="Name"
                                         className={`${errors.name && touched.name ? 'border-red-500' : 'my-2'} ${inputStyles}`}
                                     />
                                     <ErrorMessage name="name" component="div" className="text-red-500" />
@@ -79,6 +80,7 @@ const ContactForm: React.FC = () => {
                                         id="contactNo"
                                         name="contactNo"
                                         type="text"
+                                        autocomplete="tel"
                                         className={`${errors.contactNo && touched.contactNo ? 'border-red-500' : 'my-2'} ${inputStyles}`}
                                     />
                                     <ErrorMessage name="contactNo" component="div" className="text-red-500" />
@@ -87,6 +89,7 @@ const ContactForm: React.FC = () => {
                                         type="email"
                                         placeholder="EMAIL"
                                         id="email"
+                                        autoComplete="Email"
                                         className={`${errors.email && touched.email ? 'border-red-500' : 'my-2'} ${inputStyles}`}
                                     />
                                     <ErrorMessage name="email" component="div" className="text-red-500" />
@@ -94,6 +97,7 @@ const ContactForm: React.FC = () => {
                                         name="message"
                                         placeholder="MESSAGE"
                                         id="message"
+                                        autoComplete="off"
                                         className={`${errors.message && touched.message ? 'border-red-500' : 'my-2'} ${inputStyles}`}
                                     />
                                     <ErrorMessage name="message" component="div" className="text-red-500" />
@@ -110,7 +114,7 @@ const ContactForm: React.FC = () => {
                                 </Form>
                             </CardContent>
                         </Card>
-                        <div className="">
+                        <div className="z-auto">
                             <Toast isOpen={openToast} onClose={toggleToast} />
                         </div>
                         </>
