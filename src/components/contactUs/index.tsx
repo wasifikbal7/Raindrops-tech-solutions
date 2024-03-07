@@ -80,7 +80,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
           {/* <ContactForm /> */}
           <div className="flex flex-col mb-12 md:flex-row md:justify-between md:align-top md:items-center md:flex">
-            <div><motion.div
+            <div className="z-[44]"><motion.div
               className="my-8 basis-3/5 md:mt-0"
               initial="hidden"
               whileInView="visible"
@@ -109,12 +109,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               }}
             >
 
-
-
-
               <div className="w-full items-center justify-center before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
                 <img
-                  className="z-10 items-center w-full py-5 md:py-4 md:w-96"
+                  className="items-center w-full py-5 md:py-4 md:w-96"
                   alt="contact-us-page-graphic"
                   src={ContactUsPageGraphic}
                 />
