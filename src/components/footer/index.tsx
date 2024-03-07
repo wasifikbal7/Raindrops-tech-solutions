@@ -57,8 +57,8 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) =>
 						<p className="transition duration-500 hover:text-slate-700 hover:font-semibold ">
 							<a href="tel:+91-8637027140">+91-8637027140</a></p>
 						<p className="mt-1 transition duration-500 hover:text-slate-700 hover:font-semibold">
-							<a href="mailto:groupmt10use@gmail.com">contact@raindropstechsolutions.com</a>
-							<br/><a href="mailto:groupmt10use@gmail.com">support@raindropstechsolutions.com</a></p>
+							<a href="mailto:contact@raindropstechsolutions.com">contact@raindropstechsolutions.com</a>
+							<br/><a href="mailto:support@raindropstechsolutions.com">support@raindropstechsolutions.com</a></p>
 					</div>
 
 
