@@ -114,7 +114,7 @@ const ContactForm: React.FC = () => {
                                 </Form>
                             </CardContent>
                         </Card>
-                        <div className="z-auto">
+                        <div className="z-89">
                             <Toast isOpen={openToast} onClose={toggleToast} />
                         </div>
                         </>
