@@ -192,63 +192,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-/* .separator{
-  width: 0;
-  height: 0;
-  border-left: 97.65vw solid transparent;
-  border-top: 8vh solid rgb(202, 195, 195);
-  margin-bottom:-13.3vw;
-  margin-top: 4vh;
-  z-index: 1;
-  border-top-right-radius: 10px;
-}
-.separator1{
-  width: 0;
-  height: 0;
-  border-right: 94.46vw solid transparent;
-  border-bottom: 8vh solid rgb(202, 195, 195);
-  margin-top: -9vw;
-  z-index: 1;
-  border-bottom-left-radius: 10px;
-}
-
-.separator2{
-  width: 0;
-  height: 0;
-  align-self: flex-end;
-  border-left: 94.45vw solid transparent;
-  border-bottom: 8vh solid rgb(202, 195, 195);
-  margin-top: -7vh;
-  border-bottom-right-radius: 10px;
-}
-.sep1{
-  width: 0;
-  height: 0;
-  border-left: 97.65vw solid transparent;
-  border-top: 8vh solid rgb(202, 195, 195);
-  margin-bottom:-15.9vh;
-  margin-top: 8vh;
-  border-top-right-radius: 10px;
-}
-.sep2{
-  width: 0;
-  height: 0;
-  border-right: 94.45vw solid transparent;
-  border-top: 8vh solid rgb(202, 195, 195);
-  margin-bottom:-15.5vh;
-  margin-top: 5vh;
-  border-top-left-radius: 10px;
-}
-.sep3{
-  width: 0;
-  height: 0;
-  border-right: 94.46vw solid transparent;
-  border-bottom: 8vh solid rgb(202, 195, 195);
-  margin-top: -7vh;
-  border-bottom-left-radius: 10px;
-} */
-
 /*Our Services*/
 
 .custom-shape-divider-top-1709027491 {
@@ -441,3 +384,7 @@
 body::-webkit-scrollbar{
   display: none;
 } */
+
+body{
+  overflow-x:hidden;
+}
