@@ -7,6 +7,7 @@ import HText from "@/components/shared/HText";
 import 'boxicons';
 import React, { useRef, useState } from 'react'
 import ContactForm from "./contactform";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
 
@@ -17,10 +18,10 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
- 
 
 
- 
+
+
 
 
   const ref = useRef<HTMLDivElement>(null);
@@ -35,7 +36,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 
 
- 
+
 
 
 
@@ -60,8 +61,15 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           </HText>
           <div className="pt-8 md:px-12 justify-items-center ">
 
-            <p className="my-5 text-2xl leading-relaxed text-center md:px-16 ">
-              We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at contact@raindropstechsolutions.com or by phone at +91-8637027140. Alternatively, you can fill out the contact form on our website and we’ll get back to you as soon as possible. We look forward to hearing from you soon!
+            <p className="my-5 text-lg leading-relaxed text-left sm:text-2xl sm:text-center md:px-16">
+              We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at
+              <a
+                href="mailto:contact@raindropstectsolutions.com"
+                className="font-semibold duration-300 ease-in-out hover:text-teal-500 hover:underline"> contact@raindropstechsolutions.com</a> or by phone at &nbsp;
+              <a
+                href="tel:+91-8637027140"
+                className="font-semibold duration-300 ease-in-out hover:text-teal-500 hover:underline">+91-8637027140</a>
+              . Alternatively, you can fill out the contact form on our website and we’ll get back to you as soon as possible. We look forward to hearing from you soon!
             </p>
           </div>
         </motion.div>
@@ -84,7 +92,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               }}
             >
               <ContactForm />
-            
+
 
             </motion.div>
             </div>
