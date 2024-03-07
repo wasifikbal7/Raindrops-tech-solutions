@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import ContactUsPageGraphic from "@/assets/contactsvg.svg";
 import HText from "@/components/shared/HText";
 import 'boxicons';
-import React, { useRef, useState } from 'react'
+import { useRef, } from 'react'
 import ContactForm from "./contactform";
 
 
@@ -40,8 +40,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
   return (
     <section id={`${SelectedPage.ContactUs}`} className="relative w-full px-12 mx-auto mt-3 text-center bg-sky-100">
-      {/* <div className="h-full w-full absolute border-t-[25px] border-l-[55px] border-b-[25px] 
-      border-solid border-t-transparent border-b-transparent border-l-[#555]" /> */}
+
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
@@ -59,11 +58,11 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           </HText>
           <div className="pt-8 md:px-12 justify-items-center ">
 
-            <p className="my-5 text-lg leading-relaxed text-left sm:text-2xl sm:text-center md:px-16">
+            <p className="my-5 text-lg leading-relaxed text-left sm:text-2xl sm:text-center md:px-16 text-wrap">
               We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at
               <a
                 href="mailto:contact@raindropstectsolutions.com"
-                className="font-semibold duration-300 ease-in-out hover:text-teal-500 hover:underline"> contact@raindropstechsolutions.com</a> or by phone at &nbsp;
+                className="font-semibold duration-300 ease-in-out hover:text-teal-500 hover:underline"> contact@raindropstechsolutions .com</a> or by phone at &nbsp;
               <a
                 href="tel:+91-8637027140"
                 className="font-semibold duration-300 ease-in-out hover:text-teal-500 hover:underline">+91-8637027140</a>
