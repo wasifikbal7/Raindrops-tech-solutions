@@ -61,7 +61,10 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) =>
 							</p>
 							<p className="mt-1 transition duration-500 hover:text-slate-700 hover:font-semibold">
 
+
 							<a href="mailto:support@raindropstechsolutions.com">support@raindropstechsolutions.com</a></p>
+
+						  
 					</div>
 
 
