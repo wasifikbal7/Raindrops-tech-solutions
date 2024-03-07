@@ -60,7 +60,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           </HText>
           <div className="pt-8 md:px-12 justify-items-center ">
 
-            <p className="my-5 text-2xl leading-relaxed text-center md:px-16 ">
+            <p className="my-5 text-lg sm:text-2xl leading-relaxed sm:text-center md:px-16 text-left">
               We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at contact@raindropstechsolutions.com or by phone at +91-8637027140. Alternatively, you can fill out the contact form on our website and we’ll get back to you as soon as possible. We look forward to hearing from you soon!
             </p>
           </div>
