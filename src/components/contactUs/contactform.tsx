@@ -1,7 +1,7 @@
 "use client"
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import 'boxicons';
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { Card, CardContent } from "../ui/card";
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';

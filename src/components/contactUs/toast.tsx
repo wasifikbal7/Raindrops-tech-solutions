@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import Success from '@/assets/undraw_opened_re_i38e.svg'
-import HText from '../shared/HText';
 import { AiOutlineClose } from "react-icons/ai";
 
 interface ToastProps {

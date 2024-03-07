@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { IoShareSocial } from "react-icons/io5";
 import MediaData from './MediaData';
-import lg from '../../assets/lg.png'
 import { motion } from 'framer-motion';
 
 const SocialMediaButton: React.FC = () =>

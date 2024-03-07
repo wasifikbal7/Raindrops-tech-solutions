@@ -49,7 +49,7 @@ const About = ({ setSelectedPage }: Props) => {
           
           {/* HEADER */}
           <motion.div
-            className="text-center my-[-100px] md:w-full"
+            className="text-center md:w-full"
             ref={ref}
             style={{
               scale: scaleProgress,
