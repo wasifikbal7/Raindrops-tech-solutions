@@ -34,7 +34,7 @@ const AboutContent = () => {
       {/* GRAPHIC */}
 
       {/* DESCRIPTION */}
-      <div className="relative z-20 flex flex-col items-center justify-center px-2 mx-2 sm:px-4 sm:mx-2">
+      <div className="relative z-20 flex flex-col items-center justify-center py-5 px-2 mx-2 sm:px-4 sm:mx-2">
         {/* TITLE */}
         <div className="relative">
 
