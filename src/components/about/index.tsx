@@ -98,7 +98,7 @@ const About = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <ActionButton variant='outline' className="text-xl font-normal transition-all rounded-3xl duration-200 text-slate-800 hover:shadow-lg hover:bg-slate-100" size='lg' setSelectedPage={setSelectedPage}>
+              <ActionButton variant='custom' className="text-xl transition-all duration-200 text-slate-800 rounded-3xl" size='lg' setSelectedPage={setSelectedPage}>
                 Hire Us
               </ActionButton>
             </motion.div>

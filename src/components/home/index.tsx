@@ -104,8 +104,8 @@ const Home = ({ setSelectedPage }: Props) =>
 								visible: { opacity: 1, y: 0 },
 							}}
 						>
-							<div className="text-white drop-shadow-md transition-transform active:scale-90">
-								<ActionButton variant="secondary" setSelectedPage={setSelectedPage} size="lg" className='font-semibold rounded-[65px] border-2 shadow-inner shadow-slate-500 border-white transition-all duration-200 text-slate-800 hover:border-white hover:border-2'>
+							<div className="text-white transition-transform active:scale-90">
+								<ActionButton variant="custom" setSelectedPage={setSelectedPage} size="lg" className='transition-all font-semibold h-9 duration-200 text-slate-900 rounded-3xl'>
 									Hire Us
 								</ActionButton>
 							</div>
