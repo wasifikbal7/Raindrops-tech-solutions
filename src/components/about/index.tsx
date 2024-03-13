@@ -90,13 +90,13 @@ const About = ({ setSelectedPage }: Props) => {
               initial="hidden"
               whileInView={"visible"}
               viewport={{ once: true, amount: 0.1 }}
-              transition={{ delay: 1, duration: 0.3 }}
+              transition={{ delay: 0.51, duration: 0.4 }}
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <ActionButton variant='outline' className="text-lg font-bold transition-all duration-200 shadow-md text-slate-800 hover:shadow-lg hover:bg-slate-100 hover:border-black" size='lg' setSelectedPage={setSelectedPage}>
+              <ActionButton variant='outline' className="text-xl font-bold transition-all duration-200 shadow-md text-slate-800 hover:shadow-lg hover:bg-slate-100 hover:border-black" size='lg' setSelectedPage={setSelectedPage}>
                 Hire Us
               </ActionButton>
             </motion.div>

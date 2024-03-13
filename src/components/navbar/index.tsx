@@ -65,8 +65,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   />
                  
                 </div>
-                <div className="absolute font-semibold transition-transform text-gray-50 right-8 top-3 active:scale-90">
-              <ActionButton variant='outline' className="text-slate-800 text-lg font-bold border-2 border-black rounded-[65px] hover:bg-slate-100" setSelectedPage={setSelectedPage}>
+                <div className="absolute font-semibold transition-transform drop-shadow-lg right-10 top-3 active:scale-90">
+              <ActionButton variant='outline' className="text-slate-800 shadow-inner text-normal shadow-slate-500 border-white text-lg font-normal border-2 rounded-[65px] hover:bg-slate-100" setSelectedPage={setSelectedPage}>
                 GET A QUOTE
               </ActionButton>
             </div>
