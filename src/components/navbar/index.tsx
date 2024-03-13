@@ -65,9 +65,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   />
                  
                 </div>
-                <div className="absolute font-semibold transition-transform drop-shadow-lg right-10 top-3 active:scale-90">
-              <ActionButton variant='outline' className="text-slate-800 shadow-inner text-normal shadow-slate-500 border-white text-lg font-normal border-2 rounded-[65px] hover:bg-slate-100" setSelectedPage={setSelectedPage}>
-                GET A QUOTE
+                <div className="absolute font-semibold transition-transform drop-shadow-lg right-20 top-3 active:scale-90">
+              <ActionButton size='lg' variant='custom' className="text-slate-800 text-normal text-lg font-normal border-2 rounded-[65px] hover:bg-slate-100" setSelectedPage={setSelectedPage}>
+                Hire Us
               </ActionButton>
             </div>
               </div>
@@ -127,7 +127,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </div>
               <div className="relative flex flex-col items-center justify-center font-semibold transition-transform text- text-gray-50 active:scale-90 left-2">
               <ActionButton variant='outline' className="text-slate-800 text-md font-bold border-2 border-black rounded-[65px] bg-transparent hover:bg-slate-50" setSelectedPage={setSelectedPage}>
-                GET A QUOTE
+                Hire Us
               </ActionButton>
               </div>
           </div>

@@ -85,7 +85,7 @@ const About = ({ setSelectedPage }: Props) => {
 
         {/* button */}
         <div className="flex flex-col items-center justify-center md:flex md:items-center md:justify-center">
-          <div className="py-5 my-5 transition-transform text-zinc-50 active:scale-90">
+          <div className="py-5 my-5 transition-transform drop-shadow-md text-zinc-50 active:scale-90">
             <motion.div
               initial="hidden"
               whileInView={"visible"}
@@ -96,7 +96,7 @@ const About = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <ActionButton variant='outline' className="text-xl font-bold transition-all duration-200 shadow-md text-slate-800 hover:shadow-lg hover:bg-slate-100 hover:border-black" size='lg' setSelectedPage={setSelectedPage}>
+              <ActionButton variant='outline' className="text-xl font-normal transition-all rounded-3xl duration-200 text-slate-800 hover:shadow-lg hover:bg-slate-100" size='lg' setSelectedPage={setSelectedPage}>
                 Hire Us
               </ActionButton>
             </motion.div>
