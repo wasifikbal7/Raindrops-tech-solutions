@@ -126,7 +126,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             
             </div>
               <div className="relative flex flex-col items-center justify-center font-semibold transition-transform text- text-gray-50 active:scale-90 left-2">
-              <ActionButton variant='outline' className="text-slate-800 text-md font-bold border-2 border-black rounded-[65px] bg-transparent hover:bg-slate-50" setSelectedPage={setSelectedPage}>
+              <ActionButton variant='outline' className="text-slate-800 text-md rounded-[65px] bg-transparent" setSelectedPage={setSelectedPage}>
                 Hire Us
               </ActionButton>
               </div>
