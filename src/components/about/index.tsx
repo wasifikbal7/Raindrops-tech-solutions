@@ -7,7 +7,7 @@ import { useRef } from "react";
 import AboutContent from "./about-content";
 import Team from "./team";
 import ActionButton from "../shared/ActionButton";
-import StockUI from '@/assets/Default_Create_an_appealing_UI_for_a_website_called_KidzCamp_m_1_6b765bfc-9f54-4c30-a40f-2469aaa8c2ab_0.jpg';
+import StockUI from '@/assets/about-1-_1_ (1) (2).png';
 
 
 const container = {
@@ -59,12 +59,14 @@ const About = ({ setSelectedPage }: Props) => {
           >
 
               <HText><div className="text-6xl md:text-4xl">More About Us</div></HText>
-              <div className="justify-items-center ">
+              <div className="justify-items-center justify-center">
                 <p className="py-8 my-5 text-2xl leading-relaxed text-center md:px-48">
                   100% Trusted and Registered Company in India with a professional website that provides the best web development and web design services in India. We are a company that offers multi-functional web portals, and we make sure that a well-developed and attractive website can help our clients to record ROI-driven results.
                 </p>
               </div>
-              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="w-full border-2 shadow-lg border-slate-500 rounded-2xl shadow-slate-400 my-5" />
+              <div className="flex justify-center">
+              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="md:w-2/3 w-full drop-shadow-2xl my-2" />
+              </div>
           </motion.div>
         </motion.div>
         <div className="custom-shape-divider-bottom-1709027578">
