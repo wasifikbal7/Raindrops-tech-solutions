@@ -65,7 +65,7 @@ const About = ({ setSelectedPage }: Props) => {
                 </p>
               </div>
               <div className="flex justify-center">
-              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="md:w-2/3 w-full drop-shadow-2xl my-2" />
+              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="md:w-2/3 w-full drop-shadow-custom my-2" />
               </div>
           </motion.div>
         </motion.div>
