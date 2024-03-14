@@ -76,13 +76,15 @@ const About = ({ setSelectedPage }: Props) => {
         </div>
       </section>
 
-      <div className="relative my-5">
+            {/* Why Us Section */}
+
+      <div className="relative bg-cyan-900 my-5">
         <div className="custom-shape-divider-top-1709027400">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
           </svg>
         </div>
-        <div className="relative z-20 md:pt-0">
+        <div className="relative z-20 my-24 md:pt-0">
         <AboutContent />
 
         {/* button */}
