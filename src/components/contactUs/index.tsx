@@ -39,11 +39,14 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 
   return (
-    <section id={`${SelectedPage.ContactUs}`} className="relative w-full px-12 mx-auto mt-3 text-center bg-sky-100">
+    <section id={`${SelectedPage.ContactUs}`} className="relative w-full px-12 mx-auto mt-3 text-center bg-slate-500">
 
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
+                  <div className="flex flex-col justify-between pt-12 justify-items-start md:flex-row gap-y-2 md:flex md:items-center md:justify-around">
+                  <div className="flex flex-col mb-12 md:flex-row md:justify-between md:align-top md:items-center md:flex">
+
         {/* HEADER */}
         <motion.div
           className="md:w-full"
@@ -53,19 +56,20 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             opacity: opacityProgress
           }}
         >
-          <HText>
-            <span className="text-6xl text-slate-800">Get in Touch With Us</span>
-          </HText>
-          <div className="pt-8 md:px-12 justify-items-center ">
 
-            <p className="my-5 text-lg leading-relaxed text-left sm:text-2xl sm:text-center md:px-16 text-wrap">
+          <HText>
+            <span className="text-6xl text-white md:text-left">Get in Touch</span>
+          </HText>
+          <div className="pt-5 md:px-12 justify-items-start ">
+
+            <p className="my-5 leading-relaxed text-left text-white sm:text-left md:px-16 text-wrap">
               We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at
               <a
                 href="mailto:contact@raindropstectsolutions.com"
-                className="font-semibold duration-300 ease-in-out hover:text-teal-500 hover:underline"> contact@raindropstechsolutions .com</a> or by phone at &nbsp;
+                className="text-white duration-300 ease-in-out hover:text-teal-500 hover:underline"> contact@raindropstechsolutions.com</a> or by phone at &nbsp;
               <a
                 href="tel:+91-8637027140"
-                className="font-semibold duration-300 ease-in-out hover:text-teal-500 hover:underline">+91-8637027140</a>
+                className="text-white duration-300 ease-in-out hover:text-teal-500 hover:underline">+91-8637027140</a>
               . Alternatively, you can fill out the contact form on our website and we’ll get back to you as soon as possible. We look forward to hearing from you soon!
             </p>
           </div>
@@ -73,11 +77,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 
         {/* FORM AND IMAGE */}
-        <div className="flex flex-col items-center justify-between pt-12 md:flex-row gap-y-2 md:flex md:items-center md:justify-around">
+        {/* <div className="flex flex-col items-center justify-between pt-12 md:flex-row gap-y-2 md:flex md:items-center md:justify-around"> */}
 
           {/* <ContactForm /> */}
-          <div className="flex flex-col mb-12 md:flex-row md:justify-between md:align-top md:items-center md:flex">
-            <div className="z-[44]"><motion.div
+          {/* <div className="flex flex-col mb-12 md:flex-row md:justify-between md:align-top md:items-center md:flex"> */}
+            <div className="z-[44] py-9 ">
+              <motion.div
               className="my-8 basis-3/5 md:mt-0"
               initial="hidden"
               whileInView="visible"
@@ -94,7 +99,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             </motion.div>
             </div>
 
-            <motion.div
+            {/* <motion.div
               className="relative basis-3/5 "
               initial="hidden"
               whileInView="visible"
@@ -114,7 +119,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 />
               </div>
 
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </motion.div>
