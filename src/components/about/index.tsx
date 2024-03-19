@@ -59,18 +59,15 @@ const About = ({ setSelectedPage }: Props) => {
           >
 
               <HText><div className="text-6xl md:text-4xl">More About Us</div></HText>
-              <div className="justify-items-center justify-center">
+              <div className="justify-center justify-items-center">
                 <p className="py-8 my-5 text-2xl leading-relaxed text-center md:px-48">
                   100% Trusted and Registered Company in India with a professional website that provides the best web development and web design services in India. We are a company that offers multi-functional web portals, and we make sure that a well-developed and attractive website can help our clients to record ROI-driven results.
                 </p>
               </div>
-<<<<<<< HEAD
-              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="w-full my-5 border-2 shadow-lg border-slate-500 rounded-2xl shadow-slate-400" />
-=======
+            
               <div className="flex justify-center">
-              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="md:w-2/3 w-full drop-shadow-custom my-2" />
+              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="w-full my-2 md:w-2/3 drop-shadow-custom" />
               </div>
->>>>>>> 61d3b37b9920b17c068fd33e3bdbeacdae92290f
           </motion.div>
         </motion.div>
         <div className="custom-shape-divider-bottom-1709027578">
@@ -82,17 +79,14 @@ const About = ({ setSelectedPage }: Props) => {
 
             {/* Why Us Section */}
 
-      <div className="relative bg-cyan-900 my-5">
+      <div className="relative my-5 bg-cyan-900">
         <div className="custom-shape-divider-top-1709027400">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
           </svg>
         </div>
-<<<<<<< HEAD
-        <div className="relative z-20 md:mt-[-50px] mt-[-200px]">
-=======
+
         <div className="relative z-20 my-24 md:pt-0">
->>>>>>> 61d3b37b9920b17c068fd33e3bdbeacdae92290f
         <AboutContent />
 
         {/* button */}
@@ -123,6 +117,7 @@ const About = ({ setSelectedPage }: Props) => {
       </div>
  
     </div>
+    
   );
 };
 
