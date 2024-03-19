@@ -22,7 +22,7 @@ const Home = ({ setSelectedPage }: Props) =>
 		>
 			<div className="relative h-[90vh]">
 			<div>
-					<div className="absolute z-10 w-full bg-black h-full bg-opacity-45" />
+<div className="absolute z-10 w-full h-full bg-black bg-opacity-35" />
 					<video src={VideoBg} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
 				</div>
 
@@ -33,7 +33,7 @@ const Home = ({ setSelectedPage }: Props) =>
 				>
 					{/* MAIN HEADER */}
 					<div
-						className="z-10 md:m-28 m-3 md:mt-28 mt-32 flex flex-col md:basis-4/5 opacity-100 hover:bg-slate-800 hover:bg-opacity-20 duration-200 rounded-xl shadow-zinc-700 shadow-lg p-[30px] items-end">
+						className="z-10 md:m-28 m-3 md:mt-20 mt-16 flex flex-col md:basis-4/5 opacity-100 hover:bg-slate-800 hover:bg-opacity-20 duration-200 rounded-xl shadow-zinc-700 shadow-lg p-[30px] items-end">
 						{/* HEADINGS */}
 						<motion.div
 							initial="hidden"
@@ -105,7 +105,7 @@ const Home = ({ setSelectedPage }: Props) =>
 							}}
 						>
 							<div className="text-white transition-transform active:scale-90">
-								<ActionButton variant="custom" setSelectedPage={setSelectedPage} size="lg" className='transition-all font-semibold h-9 duration-200 text-slate-900 rounded-3xl'>
+								<ActionButton variant="custom" setSelectedPage={setSelectedPage} size="lg" className='font-semibold transition-all duration-200 h-9 text-slate-900 rounded-3xl'>
 									Hire Us
 								</ActionButton>
 							</div>

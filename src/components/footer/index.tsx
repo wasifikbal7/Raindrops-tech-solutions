@@ -14,7 +14,7 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) =>
 		
 		<footer className="shadow-md bg-slate-200">
 			<div className="flex flex-col items-center justify-between mx-8">
-				<div className="w-11/12 py-12 mx-auto gap-11 justify-center md:flex md:flex-row ">
+				<div className="justify-center w-11/12 py-12 mx-auto gap-11 md:flex md:flex-row ">
 					<div className="basis-2/5">
 						<a href="#home"><img alt="logo" src={Logo} className="w-68 md:w-48" />
 						</a>
@@ -55,9 +55,16 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) =>
 								<br></br>
 								700032</a></p>
 						<p className="transition duration-500 hover:text-slate-700 hover:font-semibold ">
-							<a href="tel:+91-8637027140">+91-9876543210</a></p>
+							<a href="tel:+91-8637027140">+91-8637027140</a></p>
 						<p className="mt-1 transition duration-500 hover:text-slate-700 hover:font-semibold">
-							<a href="mailto:contact@raindropstechsolutions.com">contact@raindropstechsolutions.com</a></p>
+							<a href="mailto:contact@raindropstechsolutions.com">contact@raindropstechsolutions.com</a>
+							</p>
+							<p className="mt-1 transition duration-500 hover:text-slate-700 hover:font-semibold">
+
+
+							<a href="mailto:support@raindropstechsolutions.com">support@raindropstechsolutions.com</a></p>
+
+						  
 					</div>
 
 

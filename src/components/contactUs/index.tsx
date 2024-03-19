@@ -1,15 +1,11 @@
 
-import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/components/shared/types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import ContactUsPageGraphic from "@/assets/contactsvg.svg";
 import HText from "@/components/shared/HText";
 import 'boxicons';
-import React, { useRef, useState } from 'react'
-import emailjs from 'emailjs-com';
+import { useRef, } from 'react'
 import ContactForm from "./contactform";
-import * as Yup from 'yup';
-import Toast from "./toast";
 
 
 
@@ -19,19 +15,11 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-// Define validation schema using Yup
-const validationSchema = Yup.object({
-  name: Yup.string().required('Name is required'),
-  contactNo: Yup.string().matches(/^[0-9]+$/, "Must be only digits").required('Contact number is required'),
-  email: Yup.string().email('Invalid email address').required('Email is required'),
-  message: Yup.string().required('Message is required'),
-});
-
 const ContactUs = ({ setSelectedPage }: Props) => {
- 
 
 
- 
+
+
 
 
   const ref = useRef<HTMLDivElement>(null);
@@ -46,17 +34,19 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
 
 
- 
+
 
 
 
   return (
-    <section id={`${SelectedPage.ContactUs}`} className="relative w-full px-12 mx-auto mt-3 text-center bg-sky-100">
-      {/* <div className="h-full w-full absolute border-t-[25px] border-l-[55px] border-b-[25px] 
-      border-solid border-t-transparent border-b-transparent border-l-[#555]" /> */}
+    <section id={`${SelectedPage.ContactUs}`} className="relative w-full px-12 mt-3 text-center bg-slate-500">
+
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
+                  <div className="flex justify-between py-12 justify-items-start md:flex-row gap-y-2 md:flex md:items-center">
+                  <div className="flex flex-col mb-12 md:flex-row md:justify-between md:align-top md:items-center md:flex">
+
         {/* HEADER */}
         <motion.div
           className="md:w-full"
@@ -66,24 +56,33 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             opacity: opacityProgress
           }}
         >
-          <HText>
-            <span className="text-6xl text-slate-800">Get in Touch With Us</span>
-          </HText>
-          <div className="pt-8 md:px-12 justify-items-center ">
 
-            <p className="my-5 text-2xl leading-relaxed text-center md:px-16 ">
-              We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at contact@raindropstechsolutions.com or by phone at +91-9876543210. Alternatively, you can fill out the contact form on our website and we&apos;ll get back to you as soon as possible. We look forward to hearing from you soon!
+          <HText>
+            <span className="text-6xl text-white md:text-left">Get in Touch</span>
+          </HText>
+          <div className="pt-5 justify-items-start ">
+
+            <p className="my-5 leading-relaxed text-left text-white sm:text-left md:px-12 text-wrap">
+              We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at
+              <a
+                href="mailto:contact@raindropstectsolutions.com"
+                className="text-white duration-300 ease-in-out hover:text-teal-500 hover:underline"> contact@raindropstechsolutions.com</a> or by phone at &nbsp;
+              <a
+                href="tel:+91-8637027140"
+                className="text-white duration-300 ease-in-out hover:text-teal-500 hover:underline">+91-8637027140</a>.
+               <br /><br /> Alternatively, you can fill out the contact form on our website and we’ll get back to you as soon as possible. We look forward to hearing from you soon!
             </p>
           </div>
         </motion.div>
 
 
         {/* FORM AND IMAGE */}
-        <div className="flex flex-col items-center justify-between pt-12 md:flex-row gap-y-2 md:flex md:items-center md:justify-around">
+        {/* <div className="flex flex-col items-center justify-between pt-12 md:flex-row gap-y-2 md:flex md:items-center md:justify-around"> */}
 
           {/* <ContactForm /> */}
-          <div className="flex flex-col mb-12 md:flex-row md:justify-between md:align-top md:items-center md:flex">
-            <div><motion.div
+          {/* <div className="flex flex-col mb-12 md:flex-row md:justify-between md:align-top md:items-center md:flex"> */}
+            <div className="z-[44] py-9 ">
+              <motion.div
               className="my-8 basis-3/5 md:mt-0"
               initial="hidden"
               whileInView="visible"
@@ -95,12 +94,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               }}
             >
               <ContactForm />
-            
+
 
             </motion.div>
             </div>
 
-            <motion.div
+            {/* <motion.div
               className="relative basis-3/5 "
               initial="hidden"
               whileInView="visible"
@@ -112,18 +111,15 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               }}
             >
 
-
-
-
               <div className="w-full items-center justify-center before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
                 <img
-                  className="z-10 items-center w-full py-5 md:py-4 md:w-96"
+                  className="items-center w-full py-5 md:py-4 md:w-96"
                   alt="contact-us-page-graphic"
                   src={ContactUsPageGraphic}
                 />
               </div>
 
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </motion.div>
