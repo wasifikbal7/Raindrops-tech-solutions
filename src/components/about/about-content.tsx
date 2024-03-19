@@ -79,7 +79,7 @@ const AboutContent = () => {
                 >
                   <Card className="duration-150 ease-in-out shadow-md rounded-2xl hover:shadow-lg">
                     <CardHeader className="py-2 text-2xl font-normal text-center rounded-t-2xl bg-cyan-400 brightness-105">Expertise</CardHeader>
-                    <CardContent className="text-xl h-[22rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-cyan-600 text-white py-4 text-center">
+                    <CardContent className="text-xl h-[220rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-cyan-600 text-white py-4 text-center">
                       <p className="p-4 my-1">
                         {/* {item.description} */}
                        "Our team comprises professionals with extensive experience in their respective fields. By utilising the newest technologies, we remain at the forefront of industry innovations and provide creative solutions."
@@ -108,7 +108,7 @@ const AboutContent = () => {
                     <CardHeader className="py-2 text-2xl font-normal text-center bg-yellow-500 rounded-t-2xl brightness-105">
                     Client Satisfaction
                     </CardHeader>
-                    <CardContent className="text-xl h-[22rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-yellow-600 text-white py-4 text-center">
+                    <CardContent className="text-xl h-[220rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-yellow-600 text-white py-4 text-center">
                       <p className="p-4 my-1">
                         {/* {item.description} */}
                       "Our top priority is ensuring that our clients are completely satisfied with our services. We go above and beyond to understand your unique needs and provide tailored solutions that exceed your expectations."
@@ -133,7 +133,7 @@ const AboutContent = () => {
                     <CardHeader className="py-2 text-2xl font-normal text-center bg-orange-600 rounded-t-2xl brightness-105">
                     Collaboration
                     </CardHeader>
-                    <CardContent className="text-xl h-[22rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-orange-700 text-white py-4 text-center">
+                    <CardContent className="text-xl h-[220rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-orange-700 text-white py-4 text-center">
                       <p className="p-4 my-1">
                         {/* {item.description} */}
                     "We promote the value of collaboration. We bring ideas to life by collaborating closely with our clients and maintaining open lines of communication."
@@ -158,7 +158,7 @@ const AboutContent = () => {
                     <CardHeader className="py-2 text-2xl font-normal text-center rounded-t-2xl bg-emerald-400 brightness-105">
                       Quality Assurance
                     </CardHeader>
-                    <CardContent className="text-xl h-[22rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-emerald-600 text-white py-4 text-center">
+                    <CardContent className="text-xl h-[220rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-emerald-600 text-white py-4 text-center">
                       <p className="p-4 my-1">
                         {/* {item.description} */}
                       "Our rigorous quality assurance processes ensure that every deliverable meets the highest standards of excellence. We have strict quality control measures in place to guarantee accuracy, reliability, and consistency in our work."
