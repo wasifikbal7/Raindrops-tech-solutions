@@ -22,19 +22,10 @@ const AboutContent = () => {
   }
 
   return (
-    <motion.div
-      // className="flex flex-col items-center justify-center"
-      style={{
-        scale: scaleProgress,
-        opacity: opacityProgress
-      }}
-      ref={ref}
-    >
-
+    <div>
       {/* GRAPHIC */}
-
       {/* DESCRIPTION */}
-      <div className="relative z-20 flex flex-col items-center justify-center px-2 mx-2 sm:px-4 sm:mx-2">
+      <div className="relative z-20 flex flex-col items-center justify-center py-5 px-2 mx-2 sm:px-4 sm:mx-2">
         {/* TITLE */}
         <div className="relative">
 
@@ -49,7 +40,7 @@ const AboutContent = () => {
             }}
           >
             <HText>
-              <div className="text-center text-5xl mt-[-60px] pb-28 ">
+              <div className="text-center text-4xl font-normal text-white pb-16 ">
                 Why Us
               </div>
             </HText>
@@ -68,9 +59,9 @@ const AboutContent = () => {
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="flex flex-col items-center justify-center gap-6"
+            className="flex flex-col items-center justify-center"
           >
-            <div className="flex flex-col w-11/12 gap-6 pt-5 gap-y-10">
+            <div className="grid md:grid-cols-2 md:gap-x-16 xl:gap-x-20 gap-y-8 w-5/6 md:w-11/12 xl:w-5/6 items-center justify-center">
 
               {Content.map((item: aboutContent, index: Key | null | undefined) => (
                 <motion.div
@@ -83,11 +74,11 @@ const AboutContent = () => {
                     hidden: { opacity: 0, y: 50 },
                     visible: { opacity: 1, y: 0 },
                   }}
-                  className="md:my-2"
+                  className= "md:my-2"
                 >
-                  <Card className="duration-150 ease-in-out shadow-md hover:shadow-lg">
-                    <CardHeader className="text-3xl font-bold text-center">{item.name}</CardHeader>
-                    <CardContent className="text-xl font-[600] text-center">
+                  <Card className="duration-150 rounded-2xl ease-in-out shadow-md hover:shadow-lg">
+                    <CardHeader className="text-2xl rounded-t-2xl py-2 bg-cyan-300 brightness-105 font-normal text-center">{item.name}</CardHeader>
+                    <CardContent className="text-xl h-[22rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-cyan-600 text-white py-4 text-center">
                       <p className="p-4 my-1">
                         {item.description}
                       </p>
@@ -105,8 +96,7 @@ const AboutContent = () => {
         
 
       </div>
-
-    </motion.div>
+    </div>
   );
 }
 
