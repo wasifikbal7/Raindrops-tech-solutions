@@ -77,9 +77,9 @@ const AboutContent = () => {
                   }}
                   className= "md:my-2"
                 >
-                  <Card className="duration-150 ease-in-out shadow-md rounded-2xl hover:shadow-lg">
-                    <CardHeader className="py-2 text-xl font-normal text-center rounded-t-2xl bg-cyan-400 brightness-105">Expertise</CardHeader>
-                    <CardContent className="py-4 text-sm text-center text-white rounded-b-2xl bg-cyan-600">
+                  <Card className="duration-150 ease-in-out rounded-xl border-none shadow-lg shadow-black/80 hover:shadow-lg">
+                    <CardHeader className="py-2 text-3xl font-normal text-center rounded-t-xl bg-[#43dcef]">Expertise</CardHeader>
+                    <CardContent className="py-4 text-lg text-center h-48 text-white rounded-b-xl bg-[#0093a5]">
                       <p className="p-4 my-1">
                         {/* {item.description} */}
                        "Our team comprises professionals with extensive experience in their respective fields. By utilising the newest technologies, we remain at the forefront of industry innovations and provide creative solutions."
@@ -104,11 +104,11 @@ const AboutContent = () => {
                   }}
                   className= "md:my-2"
                 >
-                  <Card className="duration-150 ease-in-out shadow-md rounded-2xl hover:shadow-lg">
-                    <CardHeader className="py-2 text-xl font-normal text-center bg-yellow-500 rounded-t-2xl brightness-105">
+                  <Card className="duration-150 border-none ease-in-out shadow-lg shadow-black/80 rounded-xl hover:shadow-lg">
+                    <CardHeader className="py-2 text-3xl font-normal text-center bg-[#d3b56d] rounded-t-xl brightness-105">
                     Client Satisfaction
                     </CardHeader>
-                    <CardContent className="py-4 text-sm text-center text-white bg-yellow-600 rounded-b-2xl">
+                    <CardContent className="py-4 text-lg h-48 text-center text-white bg-[#a48231] rounded-b-xl">
                       <p className="p-4 my-1">
                         {/* {item.description} */}
                       "Our top priority is ensuring that our clients are completely satisfied with our services. We go above and beyond to understand your unique needs and provide tailored solutions that exceed your expectations."
@@ -129,11 +129,11 @@ const AboutContent = () => {
                   }}
                   className= "md:my-2"
                 >
-                  <Card className="duration-150 ease-in-out shadow-md rounded-2xl hover:shadow-lg">
-                    <CardHeader className="py-2 text-xl font-normal text-center bg-orange-600 rounded-t-2xl brightness-105">
+                  <Card className="duration-150 ease-in-out shadow-lg shadow-black/80 border-none  rounded-xl hover:shadow-lg">
+                    <CardHeader className="py-2 text-3xl font-normal text-center bg-[#e16d3e] rounded-t-xl brightness-105">
                     Collaboration
                     </CardHeader>
-                    <CardContent className="py-4 text-white bg-orange-700 text-smtext-center rounded-b-2xl">
+                    <CardContent className="py-4 h-48 text-white bg-[#a94419] text-lg text-center rounded-b-xl">
                       <p className="p-4 my-1 text-white">
                         {/* {item.description} */}
                     "We promote the value of collaboration. We bring ideas to life by collaborating closely with our clients and maintaining open lines of communication."
@@ -154,11 +154,11 @@ const AboutContent = () => {
                   }}
                   className= "md:my-2"
                 >
-                  <Card className="duration-150 ease-in-out shadow-md rounded-2xl hover:shadow-lg">
-                    <CardHeader className="py-2 text-xl font-normal text-center rounded-t-2xl bg-emerald-400 brightness-105">
+                  <Card className="duration-150 ease-in-out shadow-lg shadow-black/80 border-none rounded-xl hover:shadow-lg">
+                    <CardHeader className="py-2 text-3xl font-normal text-center rounded-t-xl bg-[#5bbd74] brightness-105">
                       Quality Assurance
                     </CardHeader>
-                    <CardContent className="py-4 text-sm text-center text-white rounded-b-2xl bg-emerald-600">
+                    <CardContent className="py-4 text-lg h-48 text-center text-white rounded-b-xl bg-[#37894d]">
                       <p className="p-4 my-1">
                         {/* {item.description} */}
                       "Our rigorous quality assurance processes ensure that every deliverable meets the highest standards of excellence. We have strict quality control measures in place to guarantee accuracy, reliability, and consistency in our work."

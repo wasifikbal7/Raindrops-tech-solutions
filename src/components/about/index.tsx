@@ -66,7 +66,7 @@ const About = ({ setSelectedPage }: Props) => {
               </div>
             
               <div className="flex justify-center">
-              <img src={StockUI} alt="A sample illustrayion image showing our expertise in Layout Design" className="w-full my-2 md:w-2/3 drop-shadow-custom" />
+              <img src={StockUI} alt="A sample illustration image showing our expertise in Layout Design" className="w-full my-2 md:w-2/3 drop-shadow-custom" />
               </div>
           </motion.div>
         </motion.div>
@@ -79,7 +79,7 @@ const About = ({ setSelectedPage }: Props) => {
 
             {/* Why Us Section */}
 
-      <div className="relative my-5 bg-cyan-900">
+      <div className="relative my-5 bg-[#274956]">
         <div className="custom-shape-divider-top-1709027400">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
