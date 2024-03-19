@@ -86,6 +86,9 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "typing": "typing 5s steps(3), blink 0.5s infinite",
       },
+      dropShadow: {
+        "custom": "0px 25px 25px rgba(0,0,0,0.45)",
+      },
     },
   },
   plugins: [

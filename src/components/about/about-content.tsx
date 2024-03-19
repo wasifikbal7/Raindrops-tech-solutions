@@ -22,19 +22,10 @@ const AboutContent = () => {
   }
 
   return (
-    <motion.div
-      // className="flex flex-col items-center justify-center"
-      style={{
-        scale: scaleProgress,
-        opacity: opacityProgress
-      }}
-      ref={ref}
-    >
-
+    <div>
       {/* GRAPHIC */}
-
       {/* DESCRIPTION */}
-      <div className="relative z-20 flex flex-col items-center justify-center px-2 mx-2 sm:px-4 sm:mx-2">
+      <div className="relative z-20 flex flex-col items-center justify-center px-2 py-5 mx-2 sm:px-4 sm:mx-2">
         {/* TITLE */}
         <div className="relative">
 
@@ -49,7 +40,7 @@ const AboutContent = () => {
             }}
           >
             <HText>
-              <div className="text-center text-5xl mt-[-60px] pb-28 ">
+              <div className="pb-16 text-4xl font-normal text-center text-white ">
                 Why Us
               </div>
             </HText>
@@ -68,13 +59,14 @@ const AboutContent = () => {
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
             }}
-            className="flex flex-col items-center justify-center gap-6"
+            className="flex flex-col items-center justify-center"
           >
-            <div className="flex flex-col w-11/12 gap-6 pt-5 gap-y-10">
+            <div className="grid items-center justify-center w-5/6 md:grid-cols-2 md:gap-x-16 xl:gap-x-20 gap-y-8 md:w-11/12 xl:w-5/6">
 
-              {Content.map((item: aboutContent, index: Key | null | undefined) => (
+              {/* {Content.map((item: aboutContent, index: Key | null | undefined) => ( */} 
+            
                 <motion.div
-                  key={index}
+                  // key={index}
                   initial='hidden'
                   whileInView='visible'
                   viewport={{ once: true, amount: 0.25 }}
@@ -83,30 +75,105 @@ const AboutContent = () => {
                     hidden: { opacity: 0, y: 50 },
                     visible: { opacity: 1, y: 0 },
                   }}
-                  className="md:my-2"
+                  className= "md:my-2"
                 >
-                  <Card className="duration-150 ease-in-out shadow-md hover:shadow-lg">
-                    <CardHeader className="text-3xl font-bold text-center">{item.name}</CardHeader>
-                    <CardContent className="text-xl font-[600] text-center">
+                  <Card className="duration-150 ease-in-out shadow-md rounded-2xl hover:shadow-lg">
+                    <CardHeader className="py-2 text-2xl font-normal text-center rounded-t-2xl bg-cyan-400 brightness-105">Expertise</CardHeader>
+                    <CardContent className="text-xl h-[22rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-cyan-600 text-white py-4 text-center">
                       <p className="p-4 my-1">
-                        {item.description}
+                        {/* {item.description} */}
+                       "Our team comprises professionals with extensive experience in their respective fields. By utilising the newest technologies, we remain at the forefront of industry innovations and provide creative solutions."
+
                       </p>
                     </CardContent>
                   </Card>
                 </motion.div>
 
-              )
-              )}
+              {/* ) */}
+              {/* )} */}
+
+               <motion.div
+                  // key={index}
+                  initial='hidden'
+                  whileInView='visible'
+                  viewport={{ once: true, amount: 0.25 }}
+                  transition={{ delay: 0.2, ease: "easeInOut", duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  className= "md:my-2"
+                >
+                  <Card className="duration-150 ease-in-out shadow-md rounded-2xl hover:shadow-lg">
+                    <CardHeader className="py-2 text-2xl font-normal text-center bg-yellow-500 rounded-t-2xl brightness-105">
+                    Client Satisfaction
+                    </CardHeader>
+                    <CardContent className="text-xl h-[22rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-yellow-600 text-white py-4 text-center">
+                      <p className="p-4 my-1">
+                        {/* {item.description} */}
+                      "Our top priority is ensuring that our clients are completely satisfied with our services. We go above and beyond to understand your unique needs and provide tailored solutions that exceed your expectations."
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+
+                <motion.div
+                  // key={index}
+                  initial='hidden'
+                  whileInView='visible'
+                  viewport={{ once: true, amount: 0.25 }}
+                  transition={{ delay: 0.2, ease: "easeInOut", duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  className= "md:my-2"
+                >
+                  <Card className="duration-150 ease-in-out shadow-md rounded-2xl hover:shadow-lg">
+                    <CardHeader className="py-2 text-2xl font-normal text-center bg-orange-600 rounded-t-2xl brightness-105">
+                    Collaboration
+                    </CardHeader>
+                    <CardContent className="text-xl h-[22rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-orange-700 text-white py-4 text-center">
+                      <p className="p-4 my-1">
+                        {/* {item.description} */}
+                    "We promote the value of collaboration. We bring ideas to life by collaborating closely with our clients and maintaining open lines of communication."
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+
+                <motion.div
+                  // key={index}
+                  initial='hidden'
+                  whileInView='visible'
+                  viewport={{ once: true, amount: 0.25 }}
+                  transition={{ delay: 0.2, ease: "easeInOut", duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, y: 50 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  className= "md:my-2"
+                >
+                  <Card className="duration-150 ease-in-out shadow-md rounded-2xl hover:shadow-lg">
+                    <CardHeader className="py-2 text-2xl font-normal text-center rounded-t-2xl bg-emerald-400 brightness-105">
+                      Quality Assurance
+                    </CardHeader>
+                    <CardContent className="text-xl h-[22rem] md:h-[25rem] xl:h-52 font-normal rounded-b-2xl bg-emerald-600 text-white py-4 text-center">
+                      <p className="p-4 my-1">
+                        {/* {item.description} */}
+                      "Our rigorous quality assurance processes ensure that every deliverable meets the highest standards of excellence. We have strict quality control measures in place to guarantee accuracy, reliability, and consistency in our work."
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
          
             </div>
           </motion.div>
         </div>
-        {/* BUTTON */}
         
 
       </div>
-
-    </motion.div>
+    </div>
   );
 }
 
