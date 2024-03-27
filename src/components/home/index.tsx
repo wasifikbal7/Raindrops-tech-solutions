@@ -4,6 +4,7 @@ import { SelectedPage } from "@/components/shared/types";
 import TypingText from "../shared/typingText";
 import VideoBg from '@/assets/bg-Video.mp4';
 import VideoBg2 from '@/assets/video-bg2.mp4';
+import VideoBgMain from '@/assets/RTS  GRAPHICS.mp4';
 import { motion } from "framer-motion";
 
 import './index.css'
@@ -23,7 +24,7 @@ const Home = ({ setSelectedPage }: Props) =>
 			<div className="relative h-[90vh]">
 			<div>
 <div className="absolute z-10 w-full h-full bg-black bg-opacity-35" />
-					<video src={VideoBg} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
+					<video src={VideoBgMain} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
 				</div>
 
 				{/* IMAGE AND MAIN HEADER */}
