@@ -82,7 +82,7 @@ const AboutContent = () => {
                       Expertise
                       </CardHeader>
                     <CardContent className="py-4 text-lg  text-center md:min-h-[35vh] text-white rounded-b-xl bg-[#0093a5]">
-                      <p className="p-4 my-1">
+                    <p className="p-4 my-1 text-white ">
                         {/* {item.description} */}
                        "Our team comprises professionals with extensive experience in their respective fields. By utilising the newest technologies, we remain at the forefront of industry innovations and provide creative solutions."
 
@@ -111,7 +111,7 @@ const AboutContent = () => {
                     Client Satisfaction
                     </CardHeader>
                     <CardContent className="py-4 text-lg  md:min-h-[35vh] text-center text-white bg-[#a48231] rounded-b-xl">
-                      <p className="p-4 my-1">
+                    <p className="p-4 my-1 text-white ">
                         {/* {item.description} */}
                       "Our top priority is ensuring that our clients are completely satisfied with our services. We go above and beyond to understand your unique needs and provide tailored solutions that exceed your expectations."
                       </p>
@@ -136,7 +136,7 @@ const AboutContent = () => {
                     Collaboration
                     </CardHeader>
                     <CardContent className="py-4 md:min-h-[35vh] text-white bg-[#a94419] text-lg  text-center rounded-b-xl">
-                      <p className="p-4 my-1 text-white">
+                      <p className="p-4 my-1 text-white ">
                         {/* {item.description} */}
                     "We promote the value of collaboration. We bring ideas to life by collaborating closely with our clients and maintaining open lines of communication. We believe that collective creativity is the cornerstone of innovation"
                       </p>
@@ -161,7 +161,7 @@ const AboutContent = () => {
                       Quality Assurance
                     </CardHeader>
                     <CardContent className="py-4 text-lg  md:min-h-[35vh] text-center text-white rounded-b-xl bg-[#37894d]">
-                      <p className="p-4 my-1">
+                    <p className="p-4 my-1 text-white ">
                         {/* {item.description} */}
                       "Our rigorous quality assurance processes ensure that every deliverable meets the highest standards of excellence. We have strict quality control measures in place to guarantee accuracy, reliability, and consistency in our work."
                       </p>
