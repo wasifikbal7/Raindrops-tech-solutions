@@ -24,7 +24,7 @@ const Home = ({ setSelectedPage }: Props) =>
 			<div className="relative h-[90vh]">
 			<div>
 <div className="absolute z-10 w-full h-full bg-black bg-opacity-35" />
-					<video src={VideoBgMain} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
+					<video src={VideoBg} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
 				</div>
 
 				{/* IMAGE AND MAIN HEADER */}
