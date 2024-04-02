@@ -4,6 +4,8 @@ import { delay, motion, useScroll, useTransform } from "framer-motion";
 import HText from "@/components/shared/HText";
 import {CarouselSize} from "./slide"
 import { useRef } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import ppt from '@/assets/RD-services-1.pdf'
 
 
 type Props = {
@@ -20,7 +22,7 @@ const OurServices = ({ setSelectedPage }: Props) => {
   const opacityProgress = useTransform(scrollYProgress, [0.3,1], [0.7,1]);
 
   return (
-    <section id={`${SelectedPage.Services}`} className="relative flex flex-col items-center justify-center w-full py-2 md:py-2  md:my-5 text-center bg-zinc-300 bg-opacity-30">
+    <section id={`${SelectedPage.Services}`} className="relative flex flex-col items-center justify-center w-full py-2 text-center md:py-2 md:my-5 bg-zinc-300 bg-opacity-30">
       <div className="custom-shape-divider-top-1709027491">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
@@ -41,7 +43,15 @@ const OurServices = ({ setSelectedPage }: Props) => {
             <HText><div className="text-6xl sm:text-4xl">What We Offer</div></HText> 
             <p className="px-2 mt-4 text-2xl leading-relaxed md:py-12">
             Raindrops Tech Solutions is dedicated to providing innovative and cutting-edge solutions to our clients. We specialize in developing software, designing websites, and providing IT consulting services. Our team of experts is passionate about technology and is committed to delivering the best possible results for our clients. We believe in building long-term relationships with our clients and providing them with the highest level of customer service. Our goal is to help our clients achieve their business objectives by leveraging the latest technologies and best practices in the industry.
-            </p>
+            <AnchorLink
+								className="p-3 text-sm font-bold text-black underline duration-300 ease-in-out hover:text-teal-500"
+                
+								href={ppt} download="RD-services-1.pdf">
+							
+								<p>download our ppt &rarr;</p>
+							</AnchorLink>
+               </p>
+           
           </div>
         </motion.div>
         <div className="z-10 flex flex-col items-center justify-center md:w-full mt-[-70px] md:mt-1">
