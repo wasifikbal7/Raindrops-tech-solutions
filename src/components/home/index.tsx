@@ -24,7 +24,7 @@ const Home = ({ setSelectedPage }: Props) =>
 			<div className="relative h-[90vh]">
 			<div>
 <div className="absolute z-10 w-full h-full bg-black bg-opacity-35" />
-					<video src={VideoBgMain} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
+					<video src={VideoBg} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
 				</div>
 
 				{/* IMAGE AND MAIN HEADER */}
@@ -105,8 +105,12 @@ const Home = ({ setSelectedPage }: Props) =>
 								visible: { opacity: 1, y: 0 },
 							}}
 						>
-							<div className="text-white transition-transform active:scale-90">
-								<ActionButton variant="custom" setSelectedPage={setSelectedPage} size="lg" className='font-semibold transition-all duration-200 h-9 text-slate-900 rounded-3xl'>
+							<div className="text-white transition-transform active:scale-90 filter Contrast-{100}">
+								<ActionButton 
+								variant="custom" setSelectedPage={setSelectedPage} 
+								size="lg" 
+								className='font-semibold transition-all duration-200 h-9 text-slate-900 rounded-3xl filter Contrast-{100}'
+								>
 									Hire Us
 								</ActionButton>
 							</div>
