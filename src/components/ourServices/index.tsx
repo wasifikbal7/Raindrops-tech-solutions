@@ -50,10 +50,12 @@ const OurServices = ({ setSelectedPage }: Props) => {
              We believe in building long-term <span className={highlight}>RELATIONSHIPS</span> with our clients and providing them with the highest level of customer service.<br />
              Our goal is to help our clients achieve their business objectives by leveraging the latest <span className={highlight}>TECHNOLOGIES</span> and best practices in the industry.
             </p>
-           
-               <PdfDownloadButton />
+            </div>
+            <div className="p-4 m-3 md:p-1 md:m-1">
+            <PdfDownloadButton />
+            </div>
 
-          </div>
+         
         </motion.div>
         <div className="z-10 flex flex-col items-center justify-center md:w-full mt-[-70px] md:mt-1">
           <CarouselSize />
