@@ -13,8 +13,6 @@ const MediaData: Array<Social> = [
 		href: " https://wa.me/+918637027140",
 		alt: "WHATSAPP",
 	},
-
-
 	{
 		img: <FaFacebookSquare className="w-[22px] h-[22px] hover:fill-[#1877F2]" />,
 		title: "facebook",
@@ -33,14 +31,6 @@ const MediaData: Array<Social> = [
 		href: "https://www.linkedin.com/in/raindrops-tech-solutions-b689212b8/",
 		alt: "LINKEDIN",
 	},
-
-	
-	// {
-	// 	img: <FaXTwitter className="w-[22px] h-[22px] hover:fill-white hover:text-[#ffff] hover:bg-black rounded-sm" />,
-	// 	title: "whatsapp",
-	// 	href: " https://www.twitter.com/+918637027140",
-	// 	alt: "WHATSAPP",
-	// },
 	{
 		img: <FaYoutube className="w-[22px] h-[22px] hover:fill-[#FF0000]" />,
 		title: "youtube",

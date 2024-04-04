@@ -8,39 +8,20 @@ import { useRef, } from 'react'
 import ContactForm from "./contactform";
 
 
-
-
-
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
-
 const ContactUs = ({ setSelectedPage }: Props) => {
-
-
-
-
-
-
   const ref = useRef<HTMLDivElement>(null);
-
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
-
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-
-
-
-
-
-
   return (
     <section id={`${SelectedPage.ContactUs}`} className="relative w-full px-12 mt-3 text-center bg-slate-500">
-
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
       >
@@ -56,12 +37,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             opacity: opacityProgress
           }}
         >
-
           <HText>
             <span className="text-6xl text-white md:text-left">Get in Touch</span>
           </HText>
           <div className="pt-5 justify-items-start ">
-
             <p className="my-5 leading-relaxed text-left text-white sm:text-left md:px-12 text-wrap">
               We are always happy to hear from you! If you have any questions or comments about our services, please don&apos;t hesitate to get in touch with us. You can reach us via email at
               <a
@@ -74,13 +53,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
+        
+        {/* FORM  */}
 
-
-        {/* FORM AND IMAGE */}
-        {/* <div className="flex flex-col items-center justify-between pt-12 md:flex-row gap-y-2 md:flex md:items-center md:justify-around"> */}
-
-          {/* <ContactForm /> */}
-          {/* <div className="flex flex-col mb-12 md:flex-row md:justify-between md:align-top md:items-center md:flex"> */}
             <div className="z-[44] py-9 ">
               <motion.div
               className="my-8 basis-3/5 md:mt-0"
@@ -94,32 +69,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               }}
             >
               <ContactForm />
-
-
             </motion.div>
             </div>
-
-            {/* <motion.div
-              className="relative basis-3/5 "
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              variants={{
-                hidden: { opacity: 0, y: 50 },
-                visible: { opacity: 1, y: 0 },
-              }}
-            >
-
-              <div className="w-full items-center justify-center before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
-                <img
-                  className="items-center w-full py-5 md:py-4 md:w-96"
-                  alt="contact-us-page-graphic"
-                  src={ContactUsPageGraphic}
-                />
-              </div>
-
-            </motion.div> */}
           </div>
         </div>
       </motion.div>

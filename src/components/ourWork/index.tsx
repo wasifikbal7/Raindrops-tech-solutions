@@ -25,13 +25,7 @@ const ourDemo = ({ setSelectedPage }: Props) => {
 
   return (
     <section id={`${SelectedPage.Demo}`} className="relative flex flex-col items-center justify-center w-full mt-5 text-center md:mt-5">
-      {/* <div className="custom-shape-divider-top-1709027400">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
-          </svg>
-      </div> */}
       <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Demo)} className="z-10 flex flex-col items-center justify-center">
-        
         <motion.div
           ref={ref}
           style={{
@@ -48,17 +42,10 @@ const ourDemo = ({ setSelectedPage }: Props) => {
           </div>
         </motion.div>
         <div className="w-full h-full mx-3 md:my-">
-          < Slider />
-         
-       
-          {/* <CarouselSize />   */}
+          {/* < Slider /> */}
+          <CarouselSize />  
         </div>   
       </motion.div>
-      {/* <div className="custom-shape-divider-bottom-1709027714">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-              <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
-          </svg>
-      </div> */}
     </section>
   );
 };

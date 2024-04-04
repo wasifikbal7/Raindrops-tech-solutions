@@ -6,12 +6,11 @@ import { motion } from 'framer-motion';
 const SocialMediaButton: React.FC = () =>
 {
 	const [isOpen, setIsOpen] = useState(false);
-
 	const handleClick = () =>
 	{
 		setIsOpen(!isOpen);
 	};
-
+	
 	return (
 		<div className="fixed z-50 bottom-6 left-4">
 			<motion.button
