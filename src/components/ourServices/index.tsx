@@ -5,7 +5,8 @@ import HText from "@/components/shared/HText";
 import {CarouselSize} from "./slide"
 import { useRef } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import ppt from '@/assets/RD-services-1.pdf'
+import ppt from '@/assets/Raindrops Tech Solutions.pdf'
+import PdfDownloadButton from "./pdf_download_btn";
 
 
 type Props = {
@@ -43,15 +44,9 @@ const OurServices = ({ setSelectedPage }: Props) => {
             <HText><div className="text-6xl sm:text-4xl">What We Offer</div></HText> 
             <p className="px-2 mt-4 text-2xl leading-relaxed md:py-12">
             Raindrops Tech Solutions is dedicated to providing innovative and cutting-edge solutions to our clients. We specialize in developing software, designing websites, and providing IT consulting services. Our team of experts is passionate about technology and is committed to delivering the best possible results for our clients. We believe in building long-term relationships with our clients and providing them with the highest level of customer service. Our goal is to help our clients achieve their business objectives by leveraging the latest technologies and best practices in the industry.
-            <AnchorLink
-								className="p-3 text-sm font-bold text-black underline duration-300 ease-in-out hover:text-teal-500"
-                
-								href={ppt} download="RD-services-1.pdf">
-							
-								<p>download our ppt &rarr;</p>
-							</AnchorLink>
                </p>
-           
+               <PdfDownloadButton />
+
           </div>
         </motion.div>
         <div className="z-10 flex flex-col items-center justify-center md:w-full mt-[-70px] md:mt-1">
