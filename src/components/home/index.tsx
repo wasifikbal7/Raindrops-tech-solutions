@@ -12,19 +12,16 @@ import './index.css'
 type Props = {
 	setSelectedPage: (value: SelectedPage) => void;
 };
-
-const Home = ({ setSelectedPage }: Props) =>
-{
-
+const Home = ({ setSelectedPage }: Props) => {
 	return (
 		<section
 			id={`${SelectedPage.Home}`}
 			className="w-full min-h-min mt-[70px]"
 		>
 			<div className="relative h-[90vh]">
-			<div>
-<div className="absolute z-10 w-full h-full bg-black bg-opacity-35" />
-					<video src={VideoBg} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
+				<div>
+					<div className="absolute z-10 w-full h-full bg-black bg-opacity-35" />
+					<video src={VideoBgMain} autoPlay loop muted className="absolute inset-0 object-cover w-full h-full blur-sm" />
 				</div>
 
 				{/* IMAGE AND MAIN HEADER */}
@@ -46,16 +43,13 @@ const Home = ({ setSelectedPage }: Props) =>
 								visible: { opacity: 1, y: 0 },
 							}}
 						>
-
 							<div className="text-6xl ease-n-out ">
 								<h1 className="text-center text-white transition-all duration-500 bg-transparent bg-clip-text hover:text-transparent hover:bg-teal-500 ">
 									Raindrops Tech Solutions
 								</h1>
 							</div>
 						</motion.div>
-
 						<div className="flex flex-col pl-10 items-start mr-auto p-[30px] gap-[20px]">
-
 							<motion.div
 								initial="hidden"
 								whileInView="visible"
@@ -72,7 +66,7 @@ const Home = ({ setSelectedPage }: Props) =>
 								<div>
 									<span className="font-semibold text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:</span>
 									<span className="font-semibold text-white">
-										&nbsp;imagination... <TypingText text="hey" delay={500} speed={400}/>
+										&nbsp;imagination... <TypingText text="hey" delay={500} speed={400} />
 									</span>
 								</div>
 								<span className="font-semibold text-white"> &nbsp;&nbsp;&nbsp;&nbsp;&#125; </span>
@@ -91,7 +85,6 @@ const Home = ({ setSelectedPage }: Props) =>
 								<span className="font-semibold text-white">. . .Beyond Boundaraies,<br /></span>
 								<span className="font-semibold text-white"> Beyond Binaries</span>
 							</motion.div>
-
 						</div>
 						{/* ACTIONS */}
 						<motion.div
@@ -105,8 +98,12 @@ const Home = ({ setSelectedPage }: Props) =>
 								visible: { opacity: 1, y: 0 },
 							}}
 						>
-							<div className="text-white transition-transform active:scale-90">
-								<ActionButton variant="custom" setSelectedPage={setSelectedPage} size="lg" className='font-semibold transition-all duration-200 h-9 text-slate-900 rounded-3xl'>
+							<div className="text-white transition-transform active:scale-90 filter Contrast-{100}">
+								<ActionButton
+									variant="custom" setSelectedPage={setSelectedPage}
+									size="lg"
+									className='font-semibold transition-all duration-200 h-9 text-slate-900 rounded-3xl filter Contrast-{100}'
+								>
 									Hire Us
 								</ActionButton>
 							</div>

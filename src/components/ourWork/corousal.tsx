@@ -30,19 +30,19 @@ export function CarouselSize() {
                 loop:true, align:"start"
             }}    
             plugins={[plugin.current]}
-            className="items-center max-w-lg min-h-full md:w-full md:min-h-60 md:px-4 sm:px-3 md:min-w-full"
+            className="items-center max-w-lg min-h-full bg-transparent md:w-full md:min-h-60 md:px-4 sm:px-3 md:min-w-full w-[95vw]"
             >            
             <CarouselContent>
                 {Works.map((item: ClassType, index) => (                                          
                     <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                         <div className="items-center p-1 ml-3 w-fit md:h-4/5 md:w-11/12 xs:mx-2">
-                            <Card>
-                                <CardContent className="flex items-center justify-center p-6 bg-slate-100 hover:cursor-pointer aspect-square">
+                        <Card className="bg-transparent">
+                            <CardContent className="flex items-center justify-center p-6 bg-transparent hover:cursor-pointer aspect-square">
                                     <div className="p-1">
                                         <ImageCard
                                             key={`${item.name}-${index}`}
                                             name={item.name}
-                                            description={item.description}
+                                            // description={item.description}
                                             image={item.image}
                                             alt={item.alt}
                                         />
