@@ -28,7 +28,7 @@ const Services: Array<ClassType> = [
       type: ""
     },
     {
-      name: "AI/Ml Services",
+      name: "AI/ML Services",
       description: " From predictive analytics to natural language processing our AI/ML integration services are customized to meet your specific business needs.",
       image: image4,
       alt: 'imj:AI/ML',
