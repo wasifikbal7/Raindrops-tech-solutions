@@ -40,7 +40,7 @@ export function CarouselSize() {
                             <CardContent className="flex items-center justify-center p-6 bg-transparent hover:cursor-pointer aspect-square">
                                     <div className="p-1">
                                         <ImageCard
-                                            className="bg-transparent border-2 border-slate-900 rounded-[200px] px-5 py-6"
+                                            className="bg-transparent border-2 border-slate-900 rounded-[12rem] px-5 py-6"
                                             key={`${item.name}-${index}`}
                                             name={item.name}
                                             // description={item.description}
