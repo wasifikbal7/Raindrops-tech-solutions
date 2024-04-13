@@ -36,10 +36,11 @@ export function CarouselSize() {
                 {Works.map((item: ClassType, index) => (                                          
                     <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                         <div className="items-center p-1 ml-3 w-fit md:h-4/5 md:w-11/12 xs:mx-2">
-                        <Card className="bg-transparent">
+                        <Card className="bg-transparent border-none border-transparent">
                             <CardContent className="flex items-center justify-center p-6 bg-transparent hover:cursor-pointer aspect-square">
                                     <div className="p-1">
                                         <ImageCard
+                                            className="bg-transparent border-2 border-slate-900 rounded-[12rem] px-5 py-6"
                                             key={`${item.name}-${index}`}
                                             name={item.name}
                                             // description={item.description}
