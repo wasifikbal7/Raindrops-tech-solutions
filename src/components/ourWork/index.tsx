@@ -2,7 +2,7 @@
 import { SelectedPage,ClassType  } from "@/components/shared/types";
 import { motion, useScroll, useTransform } from "framer-motion";
 import HText from "@/components/shared/HText";
-import {CarouselSize} from "./corousal"
+import {CarouselSize} from "./caraousel"
 import { useRef } from "react";
 import Slider from "./Slider";
 

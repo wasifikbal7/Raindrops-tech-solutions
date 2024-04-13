@@ -8,7 +8,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
+
 interface WorkImageCardProps {
+  className?: string | undefined;
   name: string;
   description?: string;
   image?: string;
@@ -16,7 +19,7 @@ interface WorkImageCardProps {
 }
 
 
-export const ImageCard = ({ name, description, image, alt }: WorkImageCardProps) => {
+export const ImageCard = ({ name, className, description, image, alt }: WorkImageCardProps) => {
   const overlayStyles = `bg-gray-50 
     flex min-w-36 md:min-w-60 relative
      md:min-h-60 z-10 md:hover:z-20 
@@ -25,7 +28,7 @@ export const ImageCard = ({ name, description, image, alt }: WorkImageCardProps)
       lg  min-h-auto m-2 mt-5 sm:min-w-36 `;
 
   return (
-    <Card className={overlayStyles}>
+    <Card className={cn(overlayStyles, className)}>
       <div className='flex flex-col items-center justify-between whitespace-normal h-[400px] md:h-[460px]'>
         <CardHeader >
           <CardTitle className={'text-slate-700'}>{name}</CardTitle>
@@ -34,7 +37,7 @@ export const ImageCard = ({ name, description, image, alt }: WorkImageCardProps)
         </div>
         </CardHeader>
         <CardContent className={'align-bottom'}>
-          <img alt={`${alt}`} src={image} className='object-cover rounded-lg h-[105px] md:align-bottom md:h-32 w-52 md:w-72' />
+          <img alt={`${alt}`} src={image} className='object-cover rounded-lg h-[105px] = md:align-bottom md:h-32 w-52 md:w-72' />
         </CardContent>
       </div>
     </Card>
