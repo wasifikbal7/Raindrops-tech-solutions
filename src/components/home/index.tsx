@@ -4,7 +4,7 @@ import { SelectedPage } from "@/components/shared/types";
 import TypingText from "../shared/typingText";
 import VideoBg from '@/assets/bg-Video.mp4';
 import VideoBg2 from '@/assets/video-bg2.mp4';
-import VideoBgMain from '@/assets/RTS  GRAPHICS.mp4';
+import VideoBgMain from '@/assets/homebg.mp4';
 import { motion } from "framer-motion";
 
 import './index.css'
