@@ -41,7 +41,7 @@ const ourDemo = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
-        <div className="w-full h-full mx-3 md:my-">
+        <div className="w-full h-full md:mx-3 mx-2 items-center">
           {/* < Slider /> */}
           <CarouselSize />  
         </div>   
