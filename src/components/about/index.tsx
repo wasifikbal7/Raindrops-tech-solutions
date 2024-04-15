@@ -54,7 +54,7 @@ const About = ({ setSelectedPage }: Props) => {
           >
               <HText><div className="text-6xl md:text-4xl">More About Us</div></HText>
               <div className="justify-center justify-items-center">
-                <p className="py-8 my-5 text-2xl leading-relaxed text-center md:px-48">
+                <p className="py-8 my-5 text-2xl leading-relaxed text-center md:px-48 justify-items-center">
                   100% Trusted and Registered Company in India with a professional website that provides the best web development and web design services in India. We are a company that offers multi-functional web portals, and we make sure that a well-developed and attractive website can help our clients to record ROI-driven results.
                 </p>
               </div>
