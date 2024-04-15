@@ -23,7 +23,7 @@ export const WorkImageCard = ({ name, className, description, image, alt }: Work
   const overlayStyles = `bg-gray-50 
     flex min-w-36 md:min-w-60 relative
      md:min-h-60 z-[14] 
-     hover:scale-110 transition
+     hover:scale-105 transition
       duration-500 shadow-md hover:shadow-
       lg px-0 min-h-auto mt-5 sm:min-w-36 overflow-hidden`;
 
