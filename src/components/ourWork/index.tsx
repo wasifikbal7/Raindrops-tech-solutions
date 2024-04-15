@@ -32,7 +32,7 @@ const ourDemo = ({ setSelectedPage }: Props) => {
             scale: scaleProgress,
             opacity:opacityProgress,
           }}
-          className="w-5/6 mx-auto mb-5 pt- mt- pb-7"
+          className="w-full mx-6 mb-5 pt- mt- pb-7"
         >
           <div className="flex flex-col items-center justify-center text-center md:w-full">
             <HText><div className="text-6xl md:text-4xl md:pt-6 md:mt-6">Portfolio</div></HText>

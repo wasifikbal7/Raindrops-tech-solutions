@@ -33,8 +33,8 @@ export const WorkImageCard = ({ name, className, description, image, alt }: Work
         <CardHeader className='h-[50%] bg-zinc-300 bg-opacity-30 w-full'>
           <CardTitle className={'text-slate-700 py-20'}>{name}</CardTitle>
         </CardHeader>
-        <CardContent className={'align-bottom w-full h-[50%]'}>
-          <img alt={`${alt}`} src={image} className='w-full object-cover scale-125 h-full' />
+        <CardContent className={'align-bottom w-full h-[13.5rem]'}>
+          <img alt={`${alt}`} src={image} className=' align-middle object-cover scale-125 w-full h-full' />
         </CardContent>
       </div>
     </Card>

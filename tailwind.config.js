@@ -14,13 +14,16 @@ module.exports = {
       'Outfit': '"Outfit"',
       'Protest Revolution': '"Protest Revolution"'
     },
+    screens: {
+      'xs': "375px",
+      'sm':  "640px",
+      'md': "768px",
+      'lg': "1064px",
+      'xl': "1280px",
+    },
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-        "lg": "1280px",
-      },
+      padding: "2rem",      
     },
     extend: {
       colors: {
