@@ -2,12 +2,12 @@
 
 import Works from "./Works";
 import { ClassType } from "@/components/shared/types";
-import { ImageCard } from "../shared/Card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { Card, CardContent } from "../ui/card";
 import React, { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay"
 import { motion, useScroll, useTransform } from "framer-motion";
+import { WorkImageCard } from "../shared/WorkCard";
 
 
     
@@ -39,8 +39,8 @@ export function CarouselSize() {
                         <Card className="bg-transparent border-none border-transparent">
                             <CardContent className="flex items-center justify-center p-6 bg-transparent hover:cursor-pointer aspect-square">
                                     <div className="p-1">
-                                        <ImageCard
-                                            className="bg-transparent border-2 border-slate-900 rounded-[12rem] px-5 py-6"
+                                        <WorkImageCard
+                                            className="bg-transparent border-2 border-slate-900 rounded-[12rem]"
                                             key={`${item.name}-${index}`}
                                             name={item.name}
                                             // description={item.description}
