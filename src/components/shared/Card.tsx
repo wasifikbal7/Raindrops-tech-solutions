@@ -29,15 +29,15 @@ export const ImageCard = ({ name, className, description, image, alt }: WorkImag
 
   return (
     <Card className={cn(overlayStyles, className)}>
-      <div className='flex flex-col items-center justify-between whitespace-normal h-[400px] md:h-[460px]'>
+      <div className='flex flex-col items-center justify-between whitespace-normal h-[32rem] md:h-[30rem]'>
         <CardHeader >
           <CardTitle className={'text-slate-700'}>{name}</CardTitle>
           <div className='pt-4'>
             <CardDescription className={'font-medium text-slate-500'}>{description}</CardDescription>
         </div>
         </CardHeader>
-        <CardContent className={'align-bottom'}>
-          <img alt={`${alt}`} src={image} className='object-cover rounded-lg h-[105px] = md:align-bottom md:h-32 w-52 md:w-72' />
+        <CardContent className={''}>
+          <img alt={`${alt}`} src={image} className='object-cover rounded-lg h-[12rem] md:align-bottom md:h-[15rem] w-52 md:w-72' />
         </CardContent>
       </div>
     </Card>
