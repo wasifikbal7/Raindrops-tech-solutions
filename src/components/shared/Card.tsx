@@ -37,7 +37,7 @@ export const ImageCard = ({ name, className, description, image, alt }: WorkImag
         </div>
         </CardHeader>
         <CardContent className={''}>
-          <img alt={`${alt}`} src={image} className='object-cover rounded-lg h-[12rem] lg:h-[15rem] w-52 md:w-72' />
+          <img alt={`${alt}`} src={image} className='object-cover rounded-lg h-[1rem] lg:h-[10rem] w-52 md:w-72' />
         </CardContent>
       </div>
     </Card>

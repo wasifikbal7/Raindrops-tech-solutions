@@ -14,13 +14,6 @@ module.exports = {
       'Outfit': '"Outfit"',
       'Protest Revolution': '"Protest Revolution"'
     },
-    screens: {
-      'xs': "375px",
-      'sm':  "640px",
-      'md': "768px",
-      'lg': "1064px",
-      'xl': "1280px",
-    },
     container: {
       center: true,
       padding: "2rem",      
@@ -65,6 +58,9 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      screens: {
+        "md" : "720px",
       },
       keyframes: {
         "accordion-down": {
