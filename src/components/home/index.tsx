@@ -82,7 +82,7 @@ const Home = ({ setSelectedPage }: Props) => {
 									visible: { opacity: 1, x: 0 }
 								}}
 							>
-								<span className="font-semibold text-white">. . .Beyond Boundaraies,<br /></span>
+								<span className="font-semibold text-white">. . .Beyond Boundaries,<br /></span>
 								<span className="font-semibold text-white"> Beyond Binaries</span>
 							</motion.div>
 						</div>
