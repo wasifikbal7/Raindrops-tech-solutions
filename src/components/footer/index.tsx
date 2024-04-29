@@ -11,7 +11,7 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) => {
 	return (
 		<footer className="shadow-md bg-slate-200">
 			<div className="flex flex-col items-center justify-between mx-8">
-				<div className="justify-center w-11/12 py-12 mx-auto gap-11 md:flex md:flex-row ">
+				<div className="justify-center w-11/12 py-12 mx-auto gap-11 flex-row lg:flex">
 					<div className="basis-2/5">
 						<a href="#home"><img alt="logo" src={Logo} className="w-68 md:w-48" />
 						</a>
@@ -60,7 +60,7 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) => {
 							<a href="mailto:support@raindropstechsolutions.com">support@raindropstechsolutions.com</a>
 						</p>
 					</div>
-					<div className="flex flex-col items-center justify-center mt-16 basis-1/5 md:mt-0">
+					<div className="flex flex-col items-center justify-center mt-16 basis-1/5 md:mt-6">
 						<iframe title="location"
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14745.028835856898!2d88.35669679390581!3d22.49453094798417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02713b257b4201%3A0x823fbc7ff044ca83!2sJadavpur%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1705160488999!5m2!1sen!2sin"
 							width="130" height="100" loading="lazy" className="hover:w-52 hover:h-32">

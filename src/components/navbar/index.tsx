@@ -13,7 +13,7 @@ type Props = {
 };
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
-  const flexBetween = "flex items-center justify-between";
+  const flexBetween = "flex items-center justify-start";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const navbarBackground = isTopOfPage ? "" : "bg-blue-50 bg-opacity-80 min-width:1060px";
@@ -93,9 +93,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           </div>
 
           {/* MENU ITEMS */}
-          <div className="absolute mt-3 pt-4 ml-[1.5%] text-slate-800  h-[400px] flex items-center flex-col gap-9 justify-between">
+          <div className="absolute mt-3 pt-4 text-slate-800 h-[300px] flex items-center flex-col gap-9 justify-between">
             <div
-              className={` flex flex-col ml-[5%] gap-9 font-semibold text-xl ${flexBetween}`}
+              className={`flex flex-col gap-9 px-4 font-semibold text-xl w-full`}
             >
               <Link
                 page="Home"
@@ -125,9 +125,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             
             </div>
               <div className="relative flex flex-col items-center justify-center font-semibold transition-transform text- text-gray-50 active:scale-90 left-2">
-              <ActionButton variant='custom' className="text-slate-800 text-md rounded-[65px] bg-transparent" setSelectedPage={setSelectedPage}>
-                Hire Us
-              </ActionButton>
+                <ActionButton variant='custom' className="text-slate-800 text-md rounded-[65px] bg-transparent" setSelectedPage={setSelectedPage}>
+                  Hire Us
+                </ActionButton>
               </div>
           </div>
         </div>

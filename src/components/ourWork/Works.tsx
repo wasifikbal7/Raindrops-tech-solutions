@@ -5,17 +5,17 @@ import image3 from "@/assets/gd-w.webp";
 
 const Works: Array<ClassType> = [
      {
-      type:"woocommence platfrom",
-      name: "Woo-Commerce Platform",
+      type:"e-commerce platfrom",
+      name: "E-Commerce Platform",
       description:
-      "Fully dynamic e-commerce site with admin portal, featuring mobile-related items and accessories. ",
+      "Fully dynamic e-commerce site with admin portal, featuring mobile-related items and accessories.",
       image: image1,
       alt: 'imj:work',
     },
     {
       type:"edtech webapp",
       name: "Ed-Learning WebApp",
-      description:"This NextJS-based Learning Management System (LMS) offers a secure environment for teachers to create, manage, and analyze courses, with protected routes ensuring privacy. Students can purchase courses and access a dedicated dashboard for managing their purchases. Stripe integration ensures seamless and secure payment processing.",
+      description:"This NextJS-based Learning Management System (LMS) offers a secure environment for teachers to create, manage, and analyze courses, with protected routes ensuring privacy. Students can purchase courses and access a dedicated dashboard for managing their purchases. Stripe integration ensures seamless and secure payment processing.",
       image: image2,
       alt: 'imj:work',
     },
