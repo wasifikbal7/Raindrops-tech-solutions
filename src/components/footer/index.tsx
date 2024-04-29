@@ -11,7 +11,7 @@ const Footer = ({ selectedPage, setSelectedPage }: Props) => {
 	return (
 		<footer className="shadow-md bg-slate-200">
 			<div className="flex flex-col items-center justify-between mx-8">
-				<div className="justify-center w-11/12 py-12 mx-auto gap-11  md:flex-row ">
+				<div className="justify-center w-11/12 py-12 mx-auto gap-11 flex-row lg:flex">
 					<div className="basis-2/5">
 						<a href="#home"><img alt="logo" src={Logo} className="w-68 md:w-48" />
 						</a>
