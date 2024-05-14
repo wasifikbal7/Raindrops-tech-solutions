@@ -49,7 +49,7 @@ const Home = ({ setSelectedPage }: Props) => {
 								</h1>
 							</div>
 						</motion.div>
-						<div className="flex flex-col pl-10 items-start mr-auto p-[30px] gap-[20px]">
+						<div className="flex flex-col p-10 items-start mr-auto  gap-[20px]">
 							<motion.div
 								initial="hidden"
 								whileInView="visible"
