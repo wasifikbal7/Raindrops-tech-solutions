@@ -36,15 +36,15 @@ function App() {
 			/>
 			<div className="flex flex-col gap-5 mx-[10px] bg-white">
 
-				<Home setSelectedPage={setSelectedPage} />
+				<div className="mb-5"><Home setSelectedPage={setSelectedPage} /></div>
 								
-				<OurServices setSelectedPage={setSelectedPage} />
+				<div className="mb-5"><OurServices setSelectedPage={setSelectedPage} /></div>
 								
-				<OurWork setSelectedPage={setSelectedPage} />
+				<div className="mb-5"><OurWork setSelectedPage={setSelectedPage} /></div>
 								
-				<About setSelectedPage={setSelectedPage} />
+				<div className="mb-5"><About setSelectedPage={setSelectedPage} /></div>
 
-				<ContactUs setSelectedPage={setSelectedPage} />
+				<div className="mb-5"><ContactUs setSelectedPage={setSelectedPage} /></div>
 
 			</div>
 				<Footer
