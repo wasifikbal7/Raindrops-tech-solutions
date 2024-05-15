@@ -28,7 +28,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           <div className={`${flexBetween} w-full gap-20`}>
             {/* LEFT SIDE */}
             <div className="absolute w-52 navlogo md:left-8 md:w-72 left-1">
-              <a href="#home">
+              <a href="/">
                 <img alt="Raindrops" src={Logo} />
               </a>
             </div>
@@ -37,41 +37,41 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             {isAboveMediumScreens ? (
               <div className={` w-full`}>                               
                 <ul className={`flex items-end justify-items-end text-slate-700 font-normal absolute right-60 top-4 mb-3 gap-9 text-xl`}>                  
-                  <li>
+                  <li><a href="#home">
                     <Link
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>
-                  <li>
+                  </a></li>
+                  <li><a href="#services">
                     <Link 
                     page=" Services"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>
-                  <li>
+                  </a></li>
+                  <li><a href="#demo">
                     <Link
                     page=" Demo"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>
-                  <li>
+                  </a></li>
+                  <li><a href="#about">
                     <Link
                     page="About"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>
-                  <li>
+                  </a></li>
+                  <li><a href="#contactus">
                     <Link
                     page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>                 
+                  </a></li>                 
                 </ul>
               
                 <div className="absolute font-semibold transition-transform drop-shadow-lg right-20 top-3 active:scale-90">
@@ -107,41 +107,41 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <ul
               className={`flex flex-col gap-9 px-4 font-semibold text-xl w-full`}
             >
-                  <li>
+                   <li><a href="#home">
                     <Link
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>
-                  <li>
+                  </a></li>
+                  <li><a href="#services">
                     <Link 
                     page=" Services"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>
-                  <li>
+                  </a></li>
+                  <li><a href="#demo">
                     <Link
                     page=" Demo"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>
-                  <li>
+                  </a></li>
+                  <li><a href="#about">
                     <Link
                     page="About"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>
-                  <li>
+                  </a></li>
+                  <li><a href="#contactus">
                     <Link
                     page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  </li>                 
+                  </a></li>                  
                 </ul>
               <div className="relative flex flex-col items-center justify-center font-semibold transition-transform text- text-gray-50 active:scale-90 left-2">
                 <ActionButton variant='custom' className="text-slate-800 text-md rounded-[65px] bg-transparent" setSelectedPage={setSelectedPage}>
