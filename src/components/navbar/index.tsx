@@ -6,6 +6,7 @@ import { SelectedPage } from "@/components/shared/types";
 import useMediaQuery from "@/components/hooks/useMediaQuery";
 import ActionButton from "@/components/shared/ActionButton";
 
+
 type Props = {
   isTopOfPage: boolean;
   selectedPage: SelectedPage;
@@ -34,36 +35,45 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
             {/* RIGHT SIDE */}
             {isAboveMediumScreens ? (
-              <div className={` w-full`}>
-                <div className={`flex items-end justify-items-end text-slate-700 font-normal absolute right-60 top-4 mb-3 gap-9 text-xl`}>
-                  <Link
+              <div className={` w-full`}>                               
+                <ul className={`flex items-end justify-items-end text-slate-700 font-normal absolute right-60 top-4 mb-3 gap-9 text-xl`}>                  
+                  <li>
+                    <Link
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-
-                  <Link 
+                  </li>
+                  <li>
+                    <Link 
                     page=" Services"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  <Link
+                  </li>
+                  <li>
+                    <Link
                     page=" Demo"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  <Link
+                  </li>
+                  <li>
+                    <Link
                     page="About"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  <Link
+                  </li>
+                  <li>
+                    <Link
                     page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                 
-                </div>
+                  </li>                 
+                </ul>
+              
                 <div className="absolute font-semibold transition-transform drop-shadow-lg right-20 top-3 active:scale-90">
               <ActionButton size='lg' variant='custom' className="text-slate-800 text-normal text-lg font-normal border-2 rounded-[65px] hover:bg-slate-100" setSelectedPage={setSelectedPage}>
                 Hire Us
@@ -94,36 +104,45 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
           {/* MENU ITEMS */}
           <div className="absolute mt-3 pt-4 text-slate-800 h-[300px] flex items-center flex-col gap-9 justify-between">
-            <div
+            <ul
               className={`flex flex-col gap-9 px-4 font-semibold text-xl w-full`}
             >
-              <Link
-                page="Home"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page=" Services"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page=" Demo"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="About"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-              <Link
-                page="Contact Us"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
-            
-            </div>
+                  <li>
+                    <Link
+                    page="Home"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  </li>
+                  <li>
+                    <Link 
+                    page=" Services"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  </li>
+                  <li>
+                    <Link
+                    page=" Demo"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  </li>
+                  <li>
+                    <Link
+                    page="About"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  </li>
+                  <li>
+                    <Link
+                    page="Contact Us"
+                    selectedPage={selectedPage}
+                    setSelectedPage={setSelectedPage}
+                  />
+                  </li>                 
+                </ul>
               <div className="relative flex flex-col items-center justify-center font-semibold transition-transform text- text-gray-50 active:scale-90 left-2">
                 <ActionButton variant='custom' className="text-slate-800 text-md rounded-[65px] bg-transparent" setSelectedPage={setSelectedPage}>
                   Hire Us
