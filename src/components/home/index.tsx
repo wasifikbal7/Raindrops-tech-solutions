@@ -31,7 +31,11 @@ const Home = ({ setSelectedPage }: Props) => {
 				>
 					{/* MAIN HEADER */}
 					<div
-						className="z-10 md:m-28 m-3 sm:mt-32 xs:mt-28 lg:mt-32 md:mt-40 mt-12 flex flex-col md:basis-4/5 opacity-100 hover:bg-slate-800 hover:bg-opacity-20 duration-200 rounded-xl shadow-zinc-700 shadow-lg p-[0.5rem] items-end">
+						className="z-10
+						md:m-28 sm:mt-32 xs:mt-28 lg:mt-32 md:mt-40 mt-12 
+						flex flex-col md:basis-4/5  rounded-xl 
+						opacity-100 hover:bg-slate-800 hover:bg-opacity-20 
+						duration-200  shadow-zinc-700 shadow-lg p-[0.5rem] items-end">
 						{/* HEADINGS */}
 						<motion.div
 							initial="hidden"
@@ -50,7 +54,7 @@ const Home = ({ setSelectedPage }: Props) => {
 							</div>
 						</motion.div>
 						<div className="flex flex-col p-10 items-start mr-auto  gap-[20px]">
-							<motion.div
+							{/* <motion.div
 								initial="hidden"
 								whileInView="visible"
 								viewport={{ once: true, amount: 0.5 }}
@@ -70,7 +74,7 @@ const Home = ({ setSelectedPage }: Props) => {
 									</span>
 								</div>
 								<span className="font-semibold text-white"> &nbsp;&nbsp;&nbsp;&nbsp;&#125; </span>
-							</motion.div>
+							</motion.div> */}
 							<motion.div
 								className="text-xl"
 								initial='hidden'
@@ -83,7 +87,7 @@ const Home = ({ setSelectedPage }: Props) => {
 								}}
 							>
 								<span className="font-semibold text-white">. . .Beyond Boundaries,<br /></span>
-								<span className="font-semibold text-white"> Beyond Binaries</span>
+								<br/><span className="font-semibold text-white"> Beyond Binaries</span>
 							</motion.div>
 						</div>
 						{/* ACTIONS */}
