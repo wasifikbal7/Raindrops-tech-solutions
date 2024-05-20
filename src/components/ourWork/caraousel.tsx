@@ -54,8 +54,8 @@ export function CarouselSize() {
                     </CarouselItem>                                                      
                 ))}  
             </CarouselContent>
-            <CarouselPrevious className="md:hidden" />
-            <CarouselNext className="md:hidden" />
+            <CarouselPrevious className="lg:hidden" />
+            <CarouselNext className="lg:hidden" />
         </Carousel>
         </motion.div>
         
