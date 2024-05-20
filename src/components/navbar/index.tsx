@@ -27,7 +27,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           <div className={`${flexBetween} w-full gap-20`}>
             {/* LEFT SIDE */}
             <div className="absolute w-52 navlogo md:left-8 md:w-72 left-1">
-              <a href="#home">
+              <a href="/">
                 <img alt="Raindrops" src={Logo} />
               </a>
             </div>
