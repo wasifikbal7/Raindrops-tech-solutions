@@ -10,6 +10,7 @@ import OurWork from "@/components/ourWork";
 import { SelectedPage } from "@/components/shared/types";
 import Social from "./components/float_social/floatingButton";
 import { ToTopBtn } from "./components/toTopBtn";
+import useIntersectionObserver from "@/components/hooks/onScrollUrlUpdate";
 
 function App()
 {
@@ -31,6 +32,8 @@ function App()
 		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
+
+	useIntersectionObserver(setSelectedPage);
 	return (
 		<div>
 			<Navbar
@@ -40,15 +43,15 @@ function App()
 			/>
 			<div className="flex flex-col gap-5 mx-[10px] bg-white">
 
-				<div className="md:mb-5"><Home setSelectedPage={setSelectedPage} /></div>
+				<section className="md:mb-5" id="home"><Home setSelectedPage={setSelectedPage} /></section>
 
-				<div className="md:mb-5"><OurServices setSelectedPage={setSelectedPage} /></div>
+				<section className="md:mb-5" id="services"><OurServices setSelectedPage={setSelectedPage} /></section>
 
-				<div className="md:mb-5"><OurWork setSelectedPage={setSelectedPage} /></div>
+				<section className="md:mb-5" id="demo"><OurWork setSelectedPage={setSelectedPage} /></section>
 
-				<div className="md:mb-5"><About setSelectedPage={setSelectedPage} /></div>
+				<section className="md:mb-5" id="about"><About setSelectedPage={setSelectedPage} /></section>
 
-				<div className="md:mb-5"><ContactUs setSelectedPage={setSelectedPage} /></div>
+				<section className="md:mb-5" id="contactus"><ContactUs setSelectedPage={setSelectedPage} /></section>
 
 			</div>
 			<Footer
