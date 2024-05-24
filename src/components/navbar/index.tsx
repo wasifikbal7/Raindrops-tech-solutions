@@ -20,19 +20,19 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) =>
 	const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 	const navbarBackground = isTopOfPage ? "" : "bg-blue-50 bg-opacity-80 min-width:1060px";
 
-	return (
-		<nav>
-			<div
-				className={`${navbarBackground} ${flexBetween} fixed top-0 bg-stone-50 z-50 w-[100vw] backdrop-blur-sm shadow-md py-8`}
-			>
-				<div className={`${flexBetween} mx-auto w-5/6`}>
-					<div className={`${flexBetween} w-full gap-20`}>
-						{/* LEFT SIDE */}
-						<div className="absolute w-52 navlogo md:left-8 md:w-72 left-1">
-							<a href="/">
-								<img alt="Raindrops" src={Logo} />
-							</a>
-						</div>
+  return (
+    <nav>
+      <div
+        className={`${navbarBackground} ${flexBetween} fixed top-0 bg-stone-50 z-50 w-[100vw] backdrop-blur-sm shadow-md py-8`}
+      >
+        <div className={`${flexBetween} mx-auto w-5/6`}>
+          <div className={`${flexBetween} w-full gap-20`}>
+            {/* LEFT SIDE */}
+            <div className="absolute w-52 navlogo md:left-8 md:w-72 left-1">
+              <a href="/">
+                <img alt="Raindrops" src={Logo} />
+              </a>
+            </div>
 
 						{/* RIGHT SIDE */}
 						{isAboveMediumScreens ? (

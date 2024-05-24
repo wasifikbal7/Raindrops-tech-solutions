@@ -71,7 +71,7 @@ const ContactForm: React.FC = () => {
                                         placeholder="NAME"
                                         id="name"
                                         type="text"
-                                        autocomplete="Name"
+                                        autoComplete="Name"
                                         className={`${errors.name && touched.name ? 'border-red-500' : 'my-2'} ${inputStyles}`}
                                     />
                                     <ErrorMessage name="name" component="div" className="text-red-500" />
@@ -80,7 +80,7 @@ const ContactForm: React.FC = () => {
                                         id="contactNo"
                                         name="contactNo"
                                         type="text"
-                                        autocomplete="tel"
+                                        autoComplete="tel"
                                         className={`${errors.contactNo && touched.contactNo ? 'border-red-500' : 'my-2'} ${inputStyles}`}
                                     />
                                     <ErrorMessage name="contactNo" component="div" className="text-red-500" />
