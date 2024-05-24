@@ -18,7 +18,7 @@ function Toast({isOpen, onClose}: ToastProps) {
   return (
     isOpen ?
     (
-    <div className='fixed z-[100] top-0 left-0 flex items-center justify-center w-full h-full '>
+    <div className='fixed z-[900] top-0 left-0 flex items-center justify-center w-full h-full '>
       {/* Toast Overlay */}
       <div onClick={handleOverlayClick} ref={overlayRef} className='absolute top-0 left-0 w-full h-full bg-black cursor-pointer bg-opacity-70 blur-sm' />
 
