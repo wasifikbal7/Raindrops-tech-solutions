@@ -6,6 +6,7 @@ import HText from "@/components/shared/HText";
 import 'boxicons';
 import { useRef, } from 'react'
 import ContactForm from "./contactform";
+// import ContactForm from "./nm";
 
 
 type Props = {
